@@ -1,20 +1,45 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Support-Eintrag",
-  "description": "Beschreibt ein Problem einer Software für den Support.",
+  "description": "Beschreibt einen bekannten Supportfall einer Software. Zielgruppe: Supporter (1st/2nd Level) bei der Ticketbearbeitung.",
   "type": "object",
-  "required": ["id", "name", "kategorie", "bezeichnung"],
+  "required": [
+    "id",
+    "name",
+    "kategorie",
+    "bezeichnung"
+  ],
   "properties": {
-    "id": { "type": "string", "description": "Automatisch vergebene eindeutige ID" },
-    "name": { "type": "string", "minLength": 1, "description": "Kurzer Name des Problems" },
-    "kategorie": { "type": "string", "minLength": 1, "description": "z.B. Login, Drucken, Installation" },
-    "bezeichnung": { "type": "string", "minLength": 1, "description": "Beschreibung des Problems bzw. der Lösung" },
+    "id": {
+      "type": "string",
+      "description": "Automatisch vergebene eindeutige ID"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Kurzer Name des Problems"
+    },
+    "kategorie": {
+      "type": "string",
+      "minLength": 1,
+      "description": "z.B. Login, Drucken, Installation"
+    },
+    "bezeichnung": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Kurzdiagnose in knapper Fachsprache (1 Zeile, ggf. mit Fehlercode)"
+    },
     "zusatz": {
       "type": "object",
-      "description": "Frei definierbare Felder für alles, was noch nicht feststeht (Schlüssel: Wert)",
-      "additionalProperties": { "type": "string" }
+      "description": "Frei definierbare Felder (Schlüssel: Wert). Üblich: stufe1–stufe4 (Diagnosepfad), loesung, rueckfragen (mehrzeilig, \\n), textbaustein (Antwort an den Kunden, Sie-Form), eskalation (wann/an wen), begruendung (Hintergrund), produkt, fehlercode, wann, geraet, betriebssystem, frage, stichworte",
+      "additionalProperties": {
+        "type": "string"
+      }
     },
-    "erstellt": { "type": "string", "format": "date-time" }
+    "erstellt": {
+      "type": "string",
+      "format": "date-time"
+    }
   },
   "additionalProperties": false
 }

@@ -1,7 +1,8 @@
 {
   "titel": "Support-Katalog Fakturo (Beispieldaten)",
-  "stand": "2026-11-20",
-  "hinweis": "Erfundene Programmnamen. Diagnosepfad: zusatz.stufe1 bis stufe4 beantworten die vier Fragen der Kategorie (kategorien[].fragen). ursache, pruefen (Prüfschritte im Gespräch), loesung und hinweis (für den Support) sind mehrzeilig mit \\n. Einträge folgen dem Schema support-input/support-eintrag.schema.json; 'kategorie' ist der ausführliche Kategoriename.",
+  "stand": "2026-11-22",
+  "zielgruppe": "Interne Supporthilfe für 1st und 2nd Level bei der Ticketbearbeitung. Knappe Fachsprache, Begründung jeweils unten.",
+  "hinweis": "Erfundene Programmnamen. bezeichnung = Kurzdiagnose (1 Zeile, Fachsprache, ggf. mit Fehlercode). Diagnosepfad: zusatz.stufe1 bis stufe4 beantworten die vier Fragen der Kategorie (kategorien[].fragen). zusatz.loesung (Schritte), rueckfragen (fehlende Angaben beim Kunden erfragen) sind mehrzeilig mit \\n. zusatz.textbaustein = Antworttext an den Kunden (Sie-Form, ohne Anrede/Gruß), eskalation = wann und an wen, begruendung = Hintergrund, steht in der Ansicht ganz unten. Einträge folgen dem Schema support-input/support-eintrag.schema.json; 'kategorie' ist der ausführliche Kategoriename.",
   "programme": [
     {
       "name": "Fakturo",
@@ -39,10 +40,10 @@
       "kurzname": "Kunden",
       "programm": "Fakturo",
       "fragen": [
-        "Was möchte der Kunde mit den Kundendaten tun?",
-        "Was passiert dabei?",
-        "Wo fällt es auf?",
-        "Was zeigt Fakturo an?"
+        "Vorgang?",
+        "Symptom?",
+        "Wo sichtbar?",
+        "Befund?"
       ],
       "anzahl_eintraege": 7
     },
@@ -52,10 +53,10 @@
       "kurzname": "Aufträge",
       "programm": "Fakturo",
       "fragen": [
-        "Bei welchem Schritt im Auftrag hängt es?",
-        "Was passiert genau?",
-        "In welchem Status ist der Auftrag?",
-        "Was zeigt die Prüfung?"
+        "Schritt im Auftrag?",
+        "Symptom?",
+        "Auftragsstatus?",
+        "Befund?"
       ],
       "anzahl_eintraege": 7
     },
@@ -65,10 +66,10 @@
       "kurzname": "Material & Leistung",
       "programm": "Fakturo",
       "fragen": [
-        "Geht es um Material oder um Leistungen?",
+        "Material oder Leistung?",
         "Was stimmt nicht?",
-        "Wo fällt es auf?",
-        "Was zeigt die Prüfung?"
+        "Wo sichtbar?",
+        "Befund?"
       ],
       "anzahl_eintraege": 7
     },
@@ -78,10 +79,10 @@
       "kurzname": "Rechnungen",
       "programm": "Fakturo",
       "fragen": [
-        "Um welchen Beleg geht es?",
-        "Was ist das Problem?",
-        "In welchem Status ist der Beleg?",
-        "Was zeigt Fakturo an?"
+        "Belegart?",
+        "Symptom?",
+        "Belegstatus?",
+        "Meldung/Befund?"
       ],
       "anzahl_eintraege": 7
     },
@@ -91,10 +92,10 @@
       "kurzname": "Personal & Zeiten",
       "programm": "Fakturo",
       "fragen": [
-        "Worum geht es bei den Zeiten?",
-        "Was stimmt nicht?",
-        "Wen betrifft es?",
-        "Was zeigt die Prüfung?"
+        "Bereich (Zeitkonto, Pause, Abwesenheit …)?",
+        "Symptom?",
+        "Betroffene?",
+        "Befund?"
       ],
       "anzahl_eintraege": 6
     },
@@ -104,10 +105,10 @@
       "kurzname": "Terminals",
       "programm": "Fakturo",
       "fragen": [
-        "Was ist am Terminal das Problem?",
-        "Was beobachtet der Kunde?",
-        "Wie viele Terminals oder Personen betrifft es?",
-        "Was zeigt das Terminal oder Fakturo?"
+        "Bereich am Terminal?",
+        "Symptom?",
+        "Umfang (Geräte/Personen)?",
+        "Display/Meldung?"
       ],
       "anzahl_eintraege": 8
     },
@@ -117,10 +118,10 @@
       "kurzname": "Online-Zeiterfassung",
       "programm": "Fakturo Zeit",
       "fragen": [
-        "Wobei hat die Person ein Problem?",
-        "Was passiert genau?",
-        "Wo tritt es auf?",
-        "Was zeigt die Prüfung?"
+        "Funktion?",
+        "Symptom?",
+        "Wo (App, Browser, Abgleich)?",
+        "Befund?"
       ],
       "anzahl_eintraege": 7
     },
@@ -130,10 +131,10 @@
       "kurzname": "Rundgänge",
       "programm": "Fakturo Rundgang",
       "fragen": [
-        "Worum geht es beim Rundgang?",
-        "Was passiert genau?",
-        "Wer bemerkt es?",
-        "Was zeigt die Prüfung?"
+        "Bereich?",
+        "Symptom?",
+        "Gemeldet von?",
+        "Befund?"
       ],
       "anzahl_eintraege": 8
     },
@@ -143,10 +144,10 @@
       "kurzname": "Wachbuch",
       "programm": "Fakturo Wachbuch",
       "fragen": [
-        "Worum geht es im Wachbuch?",
-        "Was passiert genau?",
-        "Wo tritt es auf?",
-        "Was zeigt die Prüfung?"
+        "Bereich?",
+        "Symptom?",
+        "Wo?",
+        "Befund?"
       ],
       "anzahl_eintraege": 7
     },
@@ -156,10 +157,10 @@
       "kurzname": "Zugang & Daten",
       "programm": "alle",
       "fragen": [
-        "Worum geht es?",
-        "Was passiert genau?",
-        "Welches Programm ist betroffen?",
-        "Was zeigt die Meldung oder das Protokoll?"
+        "Bereich?",
+        "Symptom?",
+        "Programm?",
+        "Meldung/Protokoll?"
       ],
       "anzahl_eintraege": 7
     }
@@ -282,7 +283,7 @@
       "id": "SUP-001",
       "name": "Kunde ist doppelt angelegt",
       "kategorie": "Kunden und Kundenstammdaten anlegen, ändern und finden",
-      "bezeichnung": "Beim Anlegen wurde die Dublettenwarnung übergangen. Jetzt verteilen sich Aufträge und Rechnungen auf zwei Kundennummern. Beide Datensätze lassen sich zusammenführen.",
+      "bezeichnung": "Dublette. Dublettenwarnung beim Anlegen übergangen, Belege auf zwei KdNr verteilt.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Anlegen",
@@ -293,10 +294,11 @@
         "stufe4": "Zwei Kundennummern mit gleichem Namen",
         "frage": "Wie führe ich zwei doppelte Kunden zusammen?",
         "stichworte": "dublette doppelt kunde zusammenführen kundennummer",
-        "ursache": "Dublettenwarnung beim Anlegen wurde mit „Trotzdem anlegen“ übergangen.",
-        "pruefen": "Kundenliste nach Name und Ort filtern\nPrüfen, welche Kundennummer die neueren Belege hat\nPrüfen, ob eine der beiden Nummern schon an DATEV übergeben wurde",
-        "loesung": "Kunden › Liste öffnen und beide Kunden markieren\nRechtsklick › Kunden zusammenführen\nDen Kunden wählen, der bleiben soll\nAufträge und Rechnungen werden auf diese Kundennummer umgehängt",
-        "hinweis": "Die Kundennummer mit DATEV-Buchungen behalten, sonst passen die Debitorenkonten nicht mehr."
+        "loesung": "Kunden › Liste: nach Name + Ort filtern\nKdNr mit DATEV-Übergabe bzw. neueren Belegen = Ziel\nBeide markieren › Rechtsklick › Kunden zusammenführen\nZiel-KdNr wählen, Belege werden umgehängt",
+        "rueckfragen": "Welche Kundennummer soll bestehen bleiben?\nWurde eine der beiden Nummern schon an DATEV bzw. das Steuerbüro übergeben?",
+        "textbaustein": "der Kunde ist bei Ihnen zweimal angelegt, deshalb verteilen sich Aufträge und Rechnungen auf zwei Kundennummern. Sie können beide Datensätze unter Kunden › Liste markieren und per Rechtsklick „Kunden zusammenführen“. Behalten Sie bitte die Nummer, die bereits an DATEV übergeben wurde.",
+        "eskalation": "2nd Level, wenn beide KdNr bereits DATEV-Buchungen haben (Debitorenkonten müssen im Steuerbüro umgebucht werden).",
+        "begruendung": "Fakturo warnt beim Anlegen vor Dubletten, die Warnung lässt sich mit „Trotzdem anlegen“ übergehen. Beim Zusammenführen werden Aufträge, Rechnungen und offene Posten auf die Ziel-KdNr umgehängt, die andere wird inaktiv. Bleibt die KdNr ohne DATEV-Buchungen erhalten, passen die Debitorenkonten im Steuerbüro nicht mehr."
       },
       "erstellt": "2026-11-14T08:00:00Z"
     },
@@ -304,7 +306,7 @@
       "id": "SUP-002",
       "name": "Kunde lässt sich nicht löschen",
       "kategorie": "Kunden und Kundenstammdaten anlegen, ändern und finden",
-      "bezeichnung": "Kunden mit Aufträgen oder Rechnungen dürfen wegen der Aufbewahrungspflicht (GoBD, 10 Jahre) nicht gelöscht werden. Stattdessen setzt man sie auf inaktiv.",
+      "bezeichnung": "K-210. Kunde hat Belege in der Aufbewahrungsfrist (GoBD), Löschen gesperrt.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Löschen",
@@ -316,10 +318,11 @@
         "stufe4": "Meldung K-210",
         "frage": "Warum kann ich einen Kunden nicht löschen?",
         "stichworte": "kunde löschen geht nicht inaktiv archivieren gobd",
-        "ursache": "Zum Kunden gibt es Belege, die 10 Jahre aufbewahrt werden müssen.",
-        "pruefen": "Reiter „Belege“ beim Kunden öffnen\nDatum der letzten Rechnung notieren",
-        "loesung": "Kunden öffnen\nStatus auf „Inaktiv“ setzen\nInaktive Kunden erscheinen nicht mehr in der Auswahl bei neuen Aufträgen",
-        "hinweis": "Nicht über die Datenbank löschen lassen. Das verletzt die GoBD und zerstört Belegverknüpfungen."
+        "loesung": "Kunde › Reiter Belege: letzte Rechnung prüfen\nStatus auf „Inaktiv“ setzen\nFertig, Kunde verschwindet aus der Auftragsauswahl",
+        "rueckfragen": "Soll der Kunde nur aus den Auswahllisten verschwinden oder geht es um eine Löschung nach DSGVO?",
+        "textbaustein": "Kunden, zu denen es Rechnungen gibt, dürfen wegen der gesetzlichen Aufbewahrungspflicht (10 Jahre) nicht gelöscht werden. Setzen Sie den Kunden bitte auf „Inaktiv“. Er erscheint dann nicht mehr bei neuen Aufträgen, die Belege bleiben aber erhalten.",
+        "eskalation": "Keine Eskalation. Bei DSGVO-Löschwunsch SUP-007 verwenden. Löschung per Datenbank wird nicht gemacht.",
+        "begruendung": "Belege sind 10 Jahre aufbewahrungspflichtig (GoBD). Fakturo verhindert das Löschen von Kunden mit Belegen, weil sonst Verknüpfungen zu Rechnungen und offenen Posten verloren gehen. „Inaktiv“ blendet den Kunden aus, ohne Daten zu entfernen."
       },
       "erstellt": "2026-11-10T07:00:00Z"
     },
@@ -327,7 +330,7 @@
       "id": "SUP-003",
       "name": "Kunde wird in der Suche nicht gefunden",
       "kategorie": "Kunden und Kundenstammdaten anlegen, ändern und finden",
-      "bezeichnung": "Die Kundenliste zeigt standardmäßig nur aktive Kunden. Inaktive oder Interessenten sind ausgefiltert.",
+      "bezeichnung": "Listenfilter „Nur aktive“ blendet inaktive Kunden und Interessenten aus.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Suchen",
@@ -338,10 +341,11 @@
         "stufe4": "Kein Treffer bei Name oder Nummer",
         "frage": "Warum finde ich einen Kunden nicht?",
         "stichworte": "kunde suchen finden nicht gefunden filter",
-        "ursache": "Der Listenfilter „Nur aktive“ blendet inaktive Kunden und Interessenten aus.",
-        "pruefen": "Filterleiste über der Liste ansehen\nMit Filter „Alle“ nach Kundennummer suchen",
-        "loesung": "In der Kundenliste oben den Filter „Nur aktive“ ausschalten\nNach Kundennummer, Ort oder Telefonnummer suchen\nKunden bei Bedarf wieder auf „Aktiv“ setzen",
-        "hinweis": "Kunden mit Status „Gesperrt“ erscheinen auch mit Filter „Alle“ nur für Admins."
+        "loesung": "Kundenliste: Filter „Nur aktive“ aus bzw. auf „Alle“\nNach KdNr, Ort oder Telefon suchen\nGgf. Status wieder auf „Aktiv“",
+        "rueckfragen": "Haben Sie die Kundennummer oder den Ort des Kunden?\nWurde der Kunde früher auf inaktiv gesetzt?",
+        "textbaustein": "Die Kundenliste zeigt standardmäßig nur aktive Kunden. Schalten Sie bitte oben in der Liste den Filter „Nur aktive“ aus und suchen Sie erneut. Danach können Sie den Kunden bei Bedarf wieder auf „Aktiv“ setzen.",
+        "eskalation": "2nd Level, wenn der Kunde auch mit Filter „Alle“ fehlt und der Anwender Admin ist.",
+        "begruendung": "Der Standardfilter der Kundenliste ist „Nur aktive“. Inaktive Kunden und Interessenten werden dadurch ausgeblendet. Kunden mit Status „Gesperrt“ sieht man auch mit „Alle“ nur mit Admin-Recht."
       },
       "erstellt": "2026-11-06T06:00:00Z"
     },
@@ -349,7 +353,7 @@
       "id": "SUP-004",
       "name": "Neue Adresse erscheint nicht auf der Rechnung",
       "kategorie": "Kunden und Kundenstammdaten anlegen, ändern und finden",
-      "bezeichnung": "Fakturo kopiert die Adresse beim Anlegen in den Auftrag. Eine spätere Änderung am Kunden wirkt nur auf neue Aufträge.",
+      "bezeichnung": "Adresse wird bei Auftragsanlage in den Beleg kopiert. Änderung im Stamm wirkt nur auf neue Aufträge.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Drucken",
@@ -360,10 +364,11 @@
         "stufe4": "Alte Adresse im Beleg",
         "frage": "Warum steht auf der Rechnung noch die alte Adresse?",
         "stichworte": "adresse alt falsch rechnungsadresse lieferadresse",
-        "ursache": "Belege speichern die Adresse zum Zeitpunkt der Anlage. Das ist so gewollt.",
-        "pruefen": "Adresse im Kundenstamm prüfen\nAdresse im Reiter „Adresse“ des Auftrags vergleichen\nPrüfen, ob die Rechnung schon versendet ist",
-        "loesung": "Auftrag öffnen\nReiter Adresse › „Adresse aus Kundenstamm übernehmen“\nRechnung neu erzeugen, falls sie noch nicht versendet ist",
-        "hinweis": "Ist die Rechnung versendet, geht nur Storno und neue Rechnung."
+        "loesung": "Auftrag › Reiter Adresse › „Adresse aus Kundenstamm übernehmen“\nRechnung nicht versendet: neu erzeugen\nRechnung versendet: Storno + neue Rechnung (SUP-022)",
+        "rueckfragen": "Wurde die Rechnung schon an den Kunden versendet?\nUm welche Auftrags- oder Rechnungsnummer geht es?",
+        "textbaustein": "Fakturo übernimmt die Adresse beim Anlegen des Auftrags, damit der Beleg später unverändert bleibt. Öffnen Sie bitte den Auftrag, wählen Sie im Reiter „Adresse“ den Punkt „Adresse aus Kundenstamm übernehmen“ und erzeugen Sie die Rechnung neu. Ist die Rechnung schon versendet, ist ein Storno mit neuer Rechnung nötig.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Belege speichern die Adresse zum Zeitpunkt der Anlage. Das ist gewollt, damit ein Beleg auch nach Stammdatenänderungen den damaligen Stand zeigt. Versendete Rechnungen sind festgeschrieben und lassen sich nur per Storno korrigieren."
       },
       "erstellt": "2026-11-02T05:00:00Z"
     },
@@ -371,7 +376,7 @@
       "id": "SUP-005",
       "name": "Leitweg-ID für Behördenkunden fehlt",
       "kategorie": "Kunden und Kundenstammdaten anlegen, ändern und finden",
-      "bezeichnung": "Öffentliche Auftraggeber verlangen eine XRechnung mit Leitweg-ID. Ohne die ID beim Kunden kann die E-Rechnung nicht erzeugt werden.",
+      "bezeichnung": "X-BR-DE-15. Leitweg-ID fehlt im Kundenstamm, XRechnung für öffentlichen Auftraggeber wird nicht erzeugt.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Versenden",
@@ -383,10 +388,11 @@
         "stufe4": "Meldung X-BR-DE-15",
         "frage": "Wo trage ich die Leitweg-ID ein?",
         "stichworte": "leitweg id behörde xrechnung öffentlicher auftraggeber e-rechnung",
-        "ursache": "Öffentliche Auftraggeber brauchen die Leitweg-ID in jeder XRechnung.",
-        "pruefen": "Kunden › Reiter E-Rechnung öffnen\nPrüfen, ob Format „XRechnung“ gewählt ist\nLeitweg-ID vom Kunden (Auftragsschreiben) erfragen",
-        "loesung": "Kunden öffnen › Reiter E-Rechnung\nFormat „XRechnung“ wählen und Leitweg-ID eintragen\nRechnung erneut als E-Rechnung erzeugen",
-        "hinweis": "Die Leitweg-ID gibt der Auftraggeber vor. Der Support darf sie nicht raten."
+        "loesung": "Kunde › Reiter E-Rechnung\nFormat „XRechnung“ + Leitweg-ID eintragen\nRechnung erneut als E-Rechnung erzeugen",
+        "rueckfragen": "Wie lautet die Leitweg-ID laut Auftragsschreiben des Auftraggebers?",
+        "textbaustein": "Öffentliche Auftraggeber verlangen in jeder XRechnung eine Leitweg-ID. Diese steht in der Regel im Auftragsschreiben oder wird vom Auftraggeber mitgeteilt. Tragen Sie sie bitte beim Kunden im Reiter „E-Rechnung“ ein, wählen Sie das Format „XRechnung“ und erzeugen Sie die Rechnung erneut.",
+        "eskalation": "Keine Eskalation. Leitweg-ID nie raten, nur vom Auftraggeber.",
+        "begruendung": "Die Regel BR-DE-15 der XRechnung verlangt die Käuferreferenz, bei Behörden die Leitweg-ID. Ohne diese Angabe bricht Fakturo die Erzeugung ab, damit keine ungültige E-Rechnung versendet wird."
       },
       "erstellt": "2026-11-03T04:00:00Z"
     },
@@ -394,7 +400,7 @@
       "id": "SUP-006",
       "name": "Kunde fehlt in der Auftragsauswahl",
       "kategorie": "Kunden und Kundenstammdaten anlegen, ändern und finden",
-      "bezeichnung": "Der Kunde ist noch als Interessent angelegt. Interessenten erscheinen nicht in der Auswahl für neue Aufträge.",
+      "bezeichnung": "Kunde hat Status „Interessent“, erscheint nicht in der Auftragsauswahl.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Anlegen",
@@ -405,10 +411,11 @@
         "stufe4": "Kunde ist als Interessent markiert",
         "frage": "Warum kann ich einen Kunden nicht für einen Auftrag auswählen?",
         "stichworte": "kunde auswahl auftrag interessent fehlt",
-        "ursache": "Interessenten können Angebote, aber keine Aufträge bekommen.",
-        "pruefen": "Kunden öffnen und Feld „Status“ ansehen\nPrüfen, ob ein Angebot angenommen wurde",
-        "loesung": "Kunden öffnen\nStatus von „Interessent“ auf „Kunde“ ändern\nAuftrag erneut anlegen",
-        "hinweis": "Beim Umwandeln eines angenommenen Angebots wird der Interessent automatisch zum Kunden."
+        "loesung": "Kunde öffnen › Status „Interessent“ › „Kunde“\nAuftrag neu anlegen\nAlternativ: angenommenes Angebot in Auftrag umwandeln (wandelt automatisch)",
+        "rueckfragen": "Gibt es zu diesem Kunden ein angenommenes Angebot?",
+        "textbaustein": "Der Kontakt ist bei Ihnen noch als Interessent angelegt. Interessenten können Angebote, aber keine Aufträge erhalten. Ändern Sie bitte im Kunden den Status auf „Kunde“ und legen Sie den Auftrag danach erneut an.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Interessenten sind für Angebote gedacht. Erst mit Status „Kunde“ sind Aufträge und Rechnungen möglich. Wird ein angenommenes Angebot in einen Auftrag umgewandelt, ändert Fakturo den Status automatisch."
       },
       "erstellt": "2026-10-30T03:00:00Z"
     },
@@ -416,7 +423,7 @@
       "id": "SUP-007",
       "name": "Kunde verlangt Löschung seiner Daten",
       "kategorie": "Kunden und Kundenstammdaten anlegen, ändern und finden",
-      "bezeichnung": "Ein Endkunde möchte nach DSGVO gelöscht werden. Wegen der Aufbewahrungsfrist werden die Daten gesperrt und automatisch nach Fristende gelöscht.",
+      "bezeichnung": "DSGVO-Löschwunsch, Belege in Aufbewahrungsfrist. Sperren bis Fristende statt löschen.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Auf Kundenwunsch",
@@ -427,10 +434,11 @@
         "stufe4": "Es gibt Rechnungen in der Aufbewahrungsfrist",
         "frage": "Wie gehe ich mit einer DSGVO-Löschanfrage um?",
         "stichworte": "dsgvo löschen datenschutz sperren anonymisieren",
-        "ursache": "Steuerliche Aufbewahrungspflichten gehen der Löschung vor. Die Daten werden gesperrt und nach Fristende gelöscht.",
-        "pruefen": "Datum der letzten Rechnung prüfen\nPrüfen, ob Werbe-Einwilligungen hinterlegt sind",
-        "loesung": "Kunden öffnen › Datenschutz\n„Sperren bis Fristende“ wählen\nWerbe-Einwilligungen entfernen\nBestätigung für den Endkunden als PDF erzeugen",
-        "hinweis": "Antwort an den Endkunden gibt der Betrieb, nicht der Fakturo-Support."
+        "loesung": "Kunde › Datenschutz › „Sperren bis Fristende“\nWerbe-Einwilligungen entfernen\nBestätigung als PDF erzeugen, Betrieb schickt sie an den Endkunden",
+        "rueckfragen": "Liegt der Löschwunsch schriftlich vor?\nGibt es Rechnungen aus den letzten 10 Jahren?",
+        "textbaustein": "Wegen der steuerlichen Aufbewahrungspflicht können Kundendaten mit Rechnungen nicht sofort gelöscht werden. Wählen Sie bitte im Kunden unter „Datenschutz“ die Option „Sperren bis Fristende“. Die Daten werden dann gesperrt und nach Ablauf der Frist automatisch gelöscht. Die Bestätigung für Ihren Kunden können Sie dort als PDF erzeugen.",
+        "eskalation": "Keine Eskalation. Antwort an den Endkunden gibt der Betrieb, nicht wir.",
+        "begruendung": "Art. 17 DSGVO tritt hinter gesetzliche Aufbewahrungspflichten (§ 147 AO, GoBD) zurück. Gesperrte Daten sind nur noch für Prüfungen zugänglich und werden nach Fristende automatisch entfernt."
       },
       "erstellt": "2026-10-26T09:00:00Z"
     },
@@ -438,7 +446,7 @@
       "id": "SUP-008",
       "name": "Auftrag lässt sich nicht mehr bearbeiten",
       "kategorie": "Aufträge anlegen, bearbeiten und abschließen",
-      "bezeichnung": "Sobald ein Auftrag abgerechnet ist, sperrt Fakturo ihn. Änderungen laufen über eine Stornorechnung, danach ist der Auftrag wieder offen.",
+      "bezeichnung": "A-310. Auftrag ist abgerechnet und dadurch gesperrt.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Bearbeiten",
@@ -450,10 +458,11 @@
         "stufe4": "Felder grau, Meldung A-310",
         "frage": "Warum kann ich einen Auftrag nicht mehr ändern?",
         "stichworte": "auftrag gesperrt bearbeiten ändern abgerechnet",
-        "ursache": "Abgerechnete Aufträge sind gesperrt, damit Auftrag und Rechnung übereinstimmen.",
-        "pruefen": "Status oben rechts im Auftrag ansehen\nPrüfen, ob die Rechnung schon versendet ist",
-        "loesung": "Zur Rechnung des Auftrags wechseln\nRechnung stornieren (erzeugt eine Stornorechnung)\nAuftrag ist wieder offen und kann geändert werden\nNeue Rechnung erstellen",
-        "hinweis": "Bei Teilrechnungen nur die betroffene Rechnung stornieren."
+        "loesung": "Zur Rechnung des Auftrags wechseln\nRechnung stornieren (Stornorechnung)\nAuftrag ist wieder offen, ändern\nNeue Rechnung erstellen\nBei Teilrechnungen nur die betroffene stornieren",
+        "rueckfragen": "Wurde die Rechnung zum Auftrag bereits versendet?\nGibt es mehrere Teilrechnungen zum Auftrag?",
+        "textbaustein": "Sobald ein Auftrag abgerechnet ist, sperrt Fakturo ihn, damit Auftrag und Rechnung übereinstimmen. Für eine Änderung stornieren Sie bitte die zugehörige Rechnung. Danach ist der Auftrag wieder offen und Sie können ihn ändern und neu abrechnen.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Abgerechnete Aufträge werden gesperrt, damit Rechnung und Auftrag nicht auseinanderlaufen. Die Stornorechnung hebt die Sperre auf und dokumentiert die Korrektur GoBD-konform."
       },
       "erstellt": "2026-10-22T08:00:00Z"
     },
@@ -461,7 +470,7 @@
       "id": "SUP-009",
       "name": "Positionen aus dem Angebot fehlen im Auftrag",
       "kategorie": "Aufträge anlegen, bearbeiten und abschließen",
-      "bezeichnung": "Bei der Übernahme eines Angebots werden nur Positionen übernommen, die als angenommen markiert sind. Optionale Positionen bleiben zurück.",
+      "bezeichnung": "Nur angenommene Angebotspositionen werden übernommen, optionale fehlen.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Anlegen",
@@ -472,10 +481,11 @@
         "stufe4": "Fehlende Positionen sind im Angebot optional",
         "frage": "Warum fehlen Positionen, wenn ich ein Angebot in einen Auftrag umwandle?",
         "stichworte": "angebot auftrag übernehmen positionen fehlen optional",
-        "ursache": "Nur angenommene Positionen werden übernommen.",
-        "pruefen": "Angebot öffnen und Spalte „Status“ der Positionen prüfen\nPrüfen, ob es mehrere Angebotsversionen gibt",
-        "loesung": "Angebot öffnen\nFehlende Positionen auf „angenommen“ setzen\nIm Auftrag „Positionen aus Angebot nachladen“ wählen",
-        "hinweis": "Bei mehreren Versionen übernimmt Fakturo die zuletzt angenommene."
+        "loesung": "Angebot › Spalte Status der Positionen prüfen\nFehlende Positionen auf „angenommen“\nAuftrag › „Positionen aus Angebot nachladen“\nBei mehreren Angebotsversionen: zuletzt angenommene wird verwendet",
+        "rueckfragen": "Welche Positionen fehlen genau?\nGibt es mehrere Versionen des Angebots?",
+        "textbaustein": "Bei der Übernahme eines Angebots übernimmt Fakturo nur Positionen, die als angenommen markiert sind. Setzen Sie bitte die fehlenden Positionen im Angebot auf „angenommen“ und wählen Sie im Auftrag „Positionen aus Angebot nachladen“.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Optionale und Alternativpositionen gelten erst als beauftragt, wenn sie angenommen sind. So landen nicht beauftragte Leistungen nicht versehentlich in Auftrag und Rechnung."
       },
       "erstellt": "2026-10-18T07:00:00Z"
     },
@@ -483,7 +493,7 @@
       "id": "SUP-010",
       "name": "Auftrag ist verschwunden",
       "kategorie": "Aufträge anlegen, bearbeiten und abschließen",
-      "bezeichnung": "Erledigte Aufträge blendet die Auftragsliste aus. Außerdem zeigt die Liste nur das laufende Jahr.",
+      "bezeichnung": "Standardfilter Auftragsliste: nur offen + laufendes Jahr.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Suchen",
@@ -494,10 +504,11 @@
         "stufe4": "Filter steht auf „Offen“ oder laufendes Jahr",
         "frage": "Wo finde ich einen erledigten Auftrag?",
         "stichworte": "auftrag weg verschwunden finden erledigt filter",
-        "ursache": "Standardfilter der Auftragsliste zeigen nur offene Aufträge im laufenden Jahr.",
-        "pruefen": "Filter Status und Zeitraum prüfen\nNach Auftragsnummer oder Kundennummer suchen\nPapierkorb unter Aufträge › Gelöschte prüfen",
-        "loesung": "Auftragsliste öffnen\nFilter Status auf „Alle“ stellen\nZeitraum erweitern oder nach Auftragsnummer suchen",
-        "hinweis": "Gelöschte Entwürfe lassen sich 30 Tage wiederherstellen."
+        "loesung": "Auftragsliste › Filter Status „Alle“\nZeitraum erweitern oder nach AuftragsNr suchen\nNicht gefunden: Aufträge › Gelöschte (Entwürfe 30 Tage wiederherstellbar)",
+        "rueckfragen": "Haben Sie die Auftragsnummer oder die Kundennummer?\nIst der Auftrag erledigt oder aus einem Vorjahr?",
+        "textbaustein": "Die Auftragsliste zeigt standardmäßig nur offene Aufträge des laufenden Jahres. Stellen Sie bitte den Filter „Status“ auf „Alle“ und erweitern Sie den Zeitraum, oder suchen Sie direkt nach der Auftragsnummer.",
+        "eskalation": "2nd Level, wenn ein Auftrag mit Rechnung weder in der Liste noch unter Gelöscht auftaucht.",
+        "begruendung": "Erledigte Aufträge und Vorjahre sind über die Standardfilter ausgeblendet. Gelöschte Entwürfe liegen 30 Tage unter „Gelöschte“. Aufträge mit Rechnung können nicht gelöscht werden."
       },
       "erstellt": "2026-10-19T06:00:00Z"
     },
@@ -505,7 +516,7 @@
       "id": "SUP-011",
       "name": "Auftragsnummern haben Lücken",
       "kategorie": "Aufträge anlegen, bearbeiten und abschließen",
-      "bezeichnung": "Wird ein neuer Auftrag angelegt und ohne Speichern verworfen, ist die Nummer trotzdem vergeben. Das ist bei Aufträgen erlaubt, bei Rechnungen nicht.",
+      "bezeichnung": "Auftragsnummer wird beim Öffnen vergeben, verworfene Entwürfe erzeugen Lücken. Bei Aufträgen unkritisch.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Anlegen",
@@ -516,10 +527,11 @@
         "stufe4": "Verworfene Entwürfe haben Nummern belegt",
         "frage": "Warum fehlen Auftragsnummern?",
         "stichworte": "nummernkreis auftragsnummer lücke springt",
-        "ursache": "Die Nummer wird beim Öffnen vergeben, nicht beim Speichern.",
-        "pruefen": "Einstellungen › Nummernkreise ansehen\nPrüfen, ob es Lücken bei Rechnungen gibt (das wäre ein anderes Problem)",
-        "loesung": "Einstellungen › Nummernkreise öffnen\nBei Aufträgen „Nummer erst beim Speichern vergeben“ aktivieren",
-        "hinweis": "Lücken bei Auftragsnummern sind unkritisch. Lücken bei Rechnungsnummern sofort an den 2nd Level geben."
+        "loesung": "Einstellungen › Nummernkreise › Aufträge: „Nummer erst beim Speichern vergeben“ aktivieren\nSicherstellen, dass es um Auftrags- und nicht um Rechnungsnummern geht",
+        "rueckfragen": "Betrifft es Auftrags- oder Rechnungsnummern?",
+        "textbaustein": "Lücken bei Auftragsnummern entstehen, wenn ein neuer Auftrag geöffnet und ohne Speichern verworfen wird. Das ist bei Aufträgen zulässig. Wenn Sie es vermeiden möchten, aktivieren Sie unter Einstellungen › Nummernkreise die Option „Nummer erst beim Speichern vergeben“.",
+        "eskalation": "Sofort 2nd Level bei Lücken in Rechnungsnummern (GoBD-relevant).",
+        "begruendung": "Für Rechnungsnummern verlangt das Steuerrecht eine lückenlose Folge, für Auftragsnummern nicht. Standardmäßig reserviert Fakturo die Nummer beim Öffnen, damit mehrere Arbeitsplätze nicht dieselbe Nummer ziehen."
       },
       "erstellt": "2026-10-15T05:00:00Z"
     },
@@ -527,7 +539,7 @@
       "id": "SUP-012",
       "name": "Gestempelte Stunden fehlen im Auftrag",
       "kategorie": "Aufträge anlegen, bearbeiten und abschließen",
-      "bezeichnung": "Am Terminal wurde ohne Auftragsnummer gestempelt. Die Zeit liegt dann nur im Zeitkonto der Person und nicht beim Auftrag.",
+      "bezeichnung": "Am Terminal ohne Auftragsnummer gestempelt, Zeit nur im Zeitkonto, nicht am Auftrag.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Abrechnen",
@@ -539,10 +551,11 @@
         "stufe4": "Buchungen ohne Auftragsnummer in der Buchungsliste",
         "frage": "Warum sehe ich die Arbeitszeit nicht im Auftrag?",
         "stichworte": "stunden zeiten fehlen auftrag terminal leistung zuordnen",
-        "ursache": "Am Terminal wurde nur Kommen und Gehen gestempelt, ohne Auftrag.",
-        "pruefen": "Personal › Buchungen für den Tag öffnen\nSpalte „Auftrag“ prüfen\nIm Auftrag prüfen, wann zuletzt „Zeiten übernehmen“ lief",
-        "loesung": "Personal › Buchungen öffnen und Zeitraum wählen\nBuchungen ohne Auftrag markieren\n„Auftrag zuordnen“ wählen\nIm Auftrag „Zeiten übernehmen“ ausführen",
-        "hinweis": "Dem Kunden empfehlen, am Terminal die Auftragstaste zu nutzen."
+        "loesung": "Personal › Buchungen, Zeitraum wählen\nBuchungen mit leerer Spalte Auftrag markieren\n„Auftrag zuordnen“\nAuftrag › „Zeiten übernehmen“",
+        "rueckfragen": "Welche Person und welcher Tag sind betroffen?\nUm welchen Auftrag geht es?",
+        "textbaustein": "Die Stunden wurden am Terminal ohne Auftragsnummer gestempelt und liegen deshalb nur im Zeitkonto. Unter Personal › Buchungen können Sie die Buchungen markieren und mit „Auftrag zuordnen“ dem Auftrag zuweisen. Danach im Auftrag „Zeiten übernehmen“ ausführen. Für die Zukunft bitte am Terminal die Auftragstaste nutzen.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Kommen/Gehen ohne Auftrag erzeugt nur Anwesenheitszeit. Erst mit Auftragsbezug wird daraus eine übernehmbare Leistungszeit."
       },
       "erstellt": "2026-10-11T04:00:00Z"
     },
@@ -550,7 +563,7 @@
       "id": "SUP-013",
       "name": "Auftrag lässt sich nicht abschließen",
       "kategorie": "Aufträge anlegen, bearbeiten und abschließen",
-      "bezeichnung": "Beim Abschließen meldet Fakturo offene Zeitbuchungen. Diese müssen erst als Leistung übernommen werden.",
+      "bezeichnung": "A-320. Offene Zeitbuchungen am Auftrag, noch nicht als Leistung übernommen.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Abschließen",
@@ -562,10 +575,11 @@
         "stufe4": "Meldung A-320: offene Zeitbuchungen",
         "frage": "Warum kann ich einen Auftrag nicht abschließen?",
         "stichworte": "auftrag abschließen geht nicht offene zeiten",
-        "ursache": "Es gibt Zeitbuchungen zum Auftrag, die noch nicht als Leistung übernommen wurden.",
-        "pruefen": "Meldungstext genau vorlesen lassen\nAuftrag › Reiter Zeiten öffnen\nBuchungen mit Status „nicht übernommen“ zählen",
-        "loesung": "Auftrag › Reiter Zeiten öffnen\n„Zeiten übernehmen“ ausführen\nAuftrag erneut abschließen",
-        "hinweis": "Mit „Ohne Übernahme abschließen“ gehen die Stunden nicht in die Rechnung."
+        "loesung": "Auftrag › Reiter Zeiten\n„Zeiten übernehmen“\nAuftrag erneut abschließen\nNicht „Ohne Übernahme abschließen“ empfehlen",
+        "rueckfragen": "Sollen die gestempelten Stunden mit abgerechnet werden?",
+        "textbaustein": "Zum Auftrag gibt es noch Zeitbuchungen, die nicht als Leistung übernommen wurden. Öffnen Sie bitte im Auftrag den Reiter „Zeiten“, wählen Sie „Zeiten übernehmen“ und schließen Sie den Auftrag danach erneut ab.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Fakturo verhindert den Abschluss, damit keine gestempelten Stunden unberechnet bleiben. „Ohne Übernahme abschließen“ ist möglich, die Stunden fehlen dann aber dauerhaft in der Rechnung."
       },
       "erstellt": "2026-10-07T03:00:00Z"
     },
@@ -573,7 +587,7 @@
       "id": "SUP-014",
       "name": "Stunden stehen doppelt im Auftrag",
       "kategorie": "Aufträge anlegen, bearbeiten und abschließen",
-      "bezeichnung": "Die Person hat für denselben Einsatz am Terminal und in der App gestempelt. Beide Zeiten wurden übernommen.",
+      "bezeichnung": "Doppelte Stempelquelle: Terminal + App für denselben Einsatz, beide übernommen.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Abrechnen",
@@ -585,10 +599,11 @@
         "stufe4": "Zeiten aus Terminal und App doppelt übernommen",
         "frage": "Warum stehen Stunden doppelt im Auftrag?",
         "stichworte": "doppelt stunden zeiten auftrag app terminal",
-        "ursache": "Die Person hat am Terminal und zusätzlich in der App von Fakturo Zeit gestempelt.",
-        "pruefen": "Auftrag › Reiter Zeiten nach Person sortieren\nSpalte „Quelle“ ansehen (Terminal oder App)",
-        "loesung": "Doppelte Zeilen im Reiter Zeiten markieren\n„Aus Leistung entfernen“ wählen\nStempelquelle der Person auf eine festlegen",
-        "hinweis": "Pro Person nur eine Stempelquelle freigeben: Personal › Person › Zeiterfassung."
+        "loesung": "Auftrag › Zeiten nach Person sortieren, Spalte Quelle prüfen\nDoppelte Zeilen › „Aus Leistung entfernen“\nPersonal › Person › Zeiterfassung: nur eine Stempelquelle freigeben",
+        "rueckfragen": "Welche Person und welcher Tag sind betroffen?\nSoll die Person künftig am Terminal oder in der App stempeln?",
+        "textbaustein": "Für denselben Einsatz wurde am Terminal und zusätzlich in der App gestempelt, deshalb stehen die Stunden doppelt im Auftrag. Entfernen Sie bitte im Reiter „Zeiten“ die doppelten Zeilen mit „Aus Leistung entfernen“. Damit das nicht wieder passiert, legen Sie unter Personal › Person › Zeiterfassung eine einzige Stempelquelle fest.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Terminal und Fakturo Zeit liefern unabhängig voneinander Buchungen. Fakturo erkennt Überschneidungen nicht automatisch, solange beide Quellen für eine Person aktiv sind."
       },
       "erstellt": "2026-10-03T09:00:00Z"
     },
@@ -596,7 +611,7 @@
       "id": "SUP-015",
       "name": "Leistung wird mit 0,00 € berechnet",
       "kategorie": "Auftragsdetails: Material und Leistungen erfassen und berechnen",
-      "bezeichnung": "Für die Leistungsart oder die Lohngruppe der Person ist kein Stundensatz hinterlegt.",
+      "bezeichnung": "Kein Stundensatz an Leistungsart und Kunde, Position mit 0,00 €.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Abrechnen",
@@ -607,10 +622,11 @@
         "stufe4": "Leistungsart ohne Stundensatz",
         "frage": "Warum steht bei einer Leistung 0,00 €?",
         "stichworte": "stundensatz fehlt leistung null preis lohngruppe",
-        "ursache": "Weder an der Leistungsart noch am Kunden ist ein Stundensatz hinterlegt.",
-        "pruefen": "Leistungsart der Position notieren\nStammdaten › Leistungsarten öffnen\nKunden › Reiter Konditionen auf Sonderpreise prüfen",
-        "loesung": "Stammdaten › Leistungsarten öffnen\nStundensatz für die Leistungsart eintragen\nOptional: kundenbezogenen Stundensatz im Kunden hinterlegen\nIm Auftrag „Preise neu berechnen“ wählen",
-        "hinweis": "Kundenpreise gehen vor Leistungsart-Preisen."
+        "loesung": "Leistungsart der Position notieren\nStammdaten › Leistungsarten: Stundensatz eintragen\nOptional Kunde › Konditionen: Kundenstundensatz\nAuftrag › „Preise neu berechnen“",
+        "rueckfragen": "Welcher Stundensatz gilt für diesen Kunden bzw. diese Leistung?",
+        "textbaustein": "Für die Leistungsart ist kein Stundensatz hinterlegt. Tragen Sie ihn bitte unter Stammdaten › Leistungsarten ein (oder kundenbezogen im Kunden unter „Konditionen“) und wählen Sie im Auftrag „Preise neu berechnen“.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Preisfindung: Positionsrabatt/-preis vor Kundenpreis vor Leistungsart-Preis. Ist auf keiner Ebene ein Satz hinterlegt, setzt Fakturo 0,00 €."
       },
       "erstellt": "2026-10-04T08:00:00Z"
     },
@@ -618,7 +634,7 @@
       "id": "SUP-016",
       "name": "Material hat noch den alten Preis",
       "kategorie": "Auftragsdetails: Material und Leistungen erfassen und berechnen",
-      "bezeichnung": "Der Artikel im Auftrag wurde vor dem Import der neuen Lieferantenpreisliste eingefügt. Bestehende Positionen behalten ihren Preis.",
+      "bezeichnung": "Position vor Preislisten-Import eingefügt, behält alten Preis.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Abrechnen",
@@ -629,10 +645,11 @@
         "stufe4": "Position vor Preislisten-Import eingefügt",
         "frage": "Warum wird Material mit dem alten Preis berechnet?",
         "stichworte": "material preis alt preisliste artikel einkauf",
-        "ursache": "Positionen behalten den Preis vom Zeitpunkt des Einfügens.",
-        "pruefen": "Artikel öffnen und aktuellen Preis prüfen\nDatum des letzten Preislisten-Imports ansehen",
-        "loesung": "Prüfen, ob die neue Preisliste unter Artikel › Preislisten importiert ist\nIm Auftrag die Positionen markieren\n„Preise aus Artikelstamm aktualisieren“ wählen",
-        "hinweis": "Bereits berechnete Rechnungen bleiben unverändert."
+        "loesung": "Artikel › Preislisten: Import prüfen\nAuftrag: Positionen markieren › „Preise aus Artikelstamm aktualisieren“\nBereits berechnete Rechnungen bleiben unverändert",
+        "rueckfragen": "Wann wurde die neue Lieferantenpreisliste importiert?",
+        "textbaustein": "Positionen behalten den Preis vom Zeitpunkt des Einfügens. Markieren Sie bitte im Auftrag die Positionen und wählen Sie „Preise aus Artikelstamm aktualisieren“. Bereits erstellte Rechnungen ändern sich dadurch nicht.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Preise werden beim Einfügen in die Position kopiert, damit sich laufende Aufträge nicht durch einen Import unbemerkt ändern."
       },
       "erstellt": "2026-09-30T07:00:00Z"
     },
@@ -640,7 +657,7 @@
       "id": "SUP-017",
       "name": "Lagerbestand wird nicht abgebucht",
       "kategorie": "Auftragsdetails: Material und Leistungen erfassen und berechnen",
-      "bezeichnung": "Material wird erst abgebucht, wenn der Auftrag auf „ausgeführt“ steht und die Lagerbuchung aktiviert ist.",
+      "bezeichnung": "Lagerbuchung bei Aufträgen deaktiviert bzw. Auftrag nicht „ausgeführt“.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Abschließen",
@@ -651,10 +668,11 @@
         "stufe4": "Lagerbuchung ist ausgeschaltet",
         "frage": "Warum ändert sich der Bestand nicht, wenn ich Material verbrauche?",
         "stichworte": "lager bestand material abbuchen verbrauch",
-        "ursache": "Die Lagerbuchung bei Aufträgen ist in den Einstellungen aus.",
-        "pruefen": "Einstellungen › Lager ansehen\nPrüfen, ob der Artikel als Lagerartikel markiert ist",
-        "loesung": "Einstellungen › Lager › „Bestand bei Auftrag buchen“ aktivieren\nAuftrag auf „ausgeführt“ setzen\nBestand im Artikel prüfen",
-        "hinweis": "Für die Vergangenheit muss der Bestand per Inventur korrigiert werden."
+        "loesung": "Einstellungen › Lager › „Bestand bei Auftrag buchen“ aktivieren\nArtikel als Lagerartikel markiert?\nAuftrag auf „ausgeführt“\nVergangenheit per Inventur korrigieren",
+        "rueckfragen": "Ab wann soll der Bestand automatisch gebucht werden?\nIst der Artikel als Lagerartikel angelegt?",
+        "textbaustein": "Der Lagerbestand wird nur abgebucht, wenn unter Einstellungen › Lager „Bestand bei Auftrag buchen“ aktiv ist und der Auftrag auf „ausgeführt“ steht. Bitte aktivieren Sie die Option. Für zurückliegende Aufträge korrigieren Sie den Bestand bitte einmalig per Inventur.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Die Lagerbuchung ist standardmäßig aus, weil viele Betriebe ohne Lager arbeiten. Rückwirkend bucht Fakturo nicht, damit Bestände nicht doppelt verändert werden."
       },
       "erstellt": "2026-09-26T06:00:00Z"
     },
@@ -662,7 +680,7 @@
       "id": "SUP-018",
       "name": "Fahrzeit und Pausen landen in der Leistung",
       "kategorie": "Auftragsdetails: Material und Leistungen erfassen und berechnen",
-      "bezeichnung": "Bei der Übernahme von Terminalzeiten werden standardmäßig alle Zeiten übernommen. Fahrzeit und Pause lassen sich ausschließen oder getrennt abrechnen.",
+      "bezeichnung": "Zeitübernahme nimmt alle Buchungsarten mit, auch Pause und Fahrzeit.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Abrechnen",
@@ -674,10 +692,11 @@
         "stufe4": "Pause und Fahrzeit sind mit übernommen",
         "frage": "Wie rechne ich Fahrzeit getrennt ab?",
         "stichworte": "fahrzeit pause leistung übernehmen anfahrt",
-        "ursache": "Die Zeitübernahme nimmt standardmäßig alle Buchungsarten mit.",
-        "pruefen": "Auftrag › Zeiten: Buchungsart je Zeile ansehen\nEinstellungen › Zeitübernahme öffnen",
-        "loesung": "Einstellungen › Zeitübernahme öffnen\nPausen ausschließen\nFahrzeit als eigene Leistungsart „Anfahrt“ übernehmen",
-        "hinweis": "Ob Fahrzeit berechnet wird, entscheidet der Betrieb, nicht der Support."
+        "loesung": "Einstellungen › Zeitübernahme: Pausen ausschließen\nFahrzeit als eigene Leistungsart „Anfahrt“\nAuftrag: Zeiten erneut übernehmen",
+        "rueckfragen": "Soll Fahrzeit berechnet werden, und wenn ja, zu welchem Satz?",
+        "textbaustein": "Bei der Übernahme von Terminalzeiten werden standardmäßig alle Zeiten übernommen. Unter Einstellungen › Zeitübernahme können Sie Pausen ausschließen und Fahrzeit als eigene Leistungsart „Anfahrt“ abrechnen. Ob Fahrzeit berechnet wird, legen Sie selbst fest.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Standard ist „alles übernehmen“, damit keine Zeit verloren geht. Ob Fahrzeit berechnet wird, ist eine Entscheidung des Betriebs."
       },
       "erstellt": "2026-09-22T05:00:00Z"
     },
@@ -685,7 +704,7 @@
       "id": "SUP-019",
       "name": "Kundenrabatt gilt nicht für Material",
       "kategorie": "Auftragsdetails: Material und Leistungen erfassen und berechnen",
-      "bezeichnung": "Der Kundenrabatt ist nur auf Leistungen eingestellt. Für Material gibt es einen eigenen Rabattsatz.",
+      "bezeichnung": "Kundenrabatt nur auf Leistungen gesetzt, Materialrabatt leer.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Abrechnen",
@@ -696,10 +715,11 @@
         "stufe4": "Kundenrabatt gilt nur für Leistungen",
         "frage": "Warum wird der Rabatt nicht auf Material gewährt?",
         "stichworte": "rabatt material kundenrabatt nachlass",
-        "ursache": "Material und Leistungen haben getrennte Rabattfelder.",
-        "pruefen": "Kunden › Konditionen öffnen\nBeide Rabattfelder vergleichen",
-        "loesung": "Kunden öffnen › Reiter Konditionen\nRabatt für Material eintragen\nIm Auftrag „Preise neu berechnen“ wählen",
-        "hinweis": "Positionsrabatte überschreiben Kundenrabatte."
+        "loesung": "Kunde › Konditionen: Rabatt Material eintragen\nAuftrag › „Preise neu berechnen“",
+        "rueckfragen": "Welcher Rabatt soll für Material gelten?",
+        "textbaustein": "Fakturo führt für Material und Leistungen getrennte Rabattfelder. Tragen Sie bitte beim Kunden unter „Konditionen“ auch den Rabatt für Material ein und wählen Sie im Auftrag „Preise neu berechnen“.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Getrennte Rabattfelder erlauben unterschiedliche Konditionen für Material und Arbeitszeit. Positionsrabatte überschreiben Kundenrabatte."
       },
       "erstellt": "2026-09-18T04:00:00Z"
     },
@@ -707,7 +727,7 @@
       "id": "SUP-020",
       "name": "Zuschläge für Nacht und Wochenende fehlen",
       "kategorie": "Auftragsdetails: Material und Leistungen erfassen und berechnen",
-      "bezeichnung": "Nacht-, Sonntags- und Feiertagsstunden werden zum normalen Stundensatz berechnet.",
+      "bezeichnung": "Keine Zuschlagsregel an der Leistungsart, Nacht/So/Feiertag zum Normalsatz.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Abrechnen",
@@ -718,10 +738,11 @@
         "stufe4": "Keine Zuschlagsregel für die Leistungsart",
         "frage": "Warum werden keine Nachtzuschläge berechnet?",
         "stichworte": "zuschlag nacht wochenende feiertag sonntag leistung",
-        "ursache": "Für die Leistungsart ist keine Zuschlagsregel hinterlegt.",
-        "pruefen": "Zeitraum der Buchung prüfen (Uhrzeit, Wochentag)\nStammdaten › Leistungsarten › Zuschläge öffnen\nFeiertagskalender des Bundeslands prüfen",
-        "loesung": "Stammdaten › Leistungsarten › Zuschläge öffnen\nZuschläge mit Uhrzeit und Prozentsatz anlegen\nIm Auftrag Zeiten erneut übernehmen",
-        "hinweis": "Typisch bei Objektschutz und Wachdienst. Zuschläge gelten erst für neue Übernahmen."
+        "loesung": "Buchungszeit prüfen (Uhrzeit, Wochentag)\nStammdaten › Leistungsarten › Zuschläge: Zeitraum + Prozent anlegen\nEinstellungen › Feiertage: Bundesland\nAuftrag: Zeiten erneut übernehmen",
+        "rueckfragen": "Welche Zuschläge sind vereinbart (Nacht, Sonntag, Feiertag, jeweils in Prozent)?\nIn welchem Bundesland liegt das Objekt?",
+        "textbaustein": "Für die Leistungsart ist keine Zuschlagsregel hinterlegt. Legen Sie die Zuschläge bitte unter Stammdaten › Leistungsarten › Zuschläge mit Uhrzeit und Prozentsatz an und übernehmen Sie die Zeiten im Auftrag erneut. Die Zuschläge gelten nur für neue Übernahmen.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Typisch bei Objektschutz und Wachdienst. Zuschläge werden bei der Zeitübernahme berechnet, bereits übernommene Zeiten ändern sich nicht von selbst."
       },
       "erstellt": "2026-09-19T03:00:00Z"
     },
@@ -729,7 +750,7 @@
       "id": "SUP-021",
       "name": "Menge oder Einheit beim Material falsch",
       "kategorie": "Auftragsdetails: Material und Leistungen erfassen und berechnen",
-      "bezeichnung": "Die Menge im Auftrag passt nicht, weil der Artikel in einer anderen Einheit geführt wird.",
+      "bezeichnung": "Artikel in Verpackungseinheit geführt, in Stück gebucht.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Abrechnen",
@@ -740,10 +761,11 @@
         "stufe4": "Artikel hat Verpackungseinheit statt Stück",
         "frage": "Warum stimmt die Materialmenge nicht?",
         "stichworte": "menge einheit material stück paket meter",
-        "ursache": "Der Artikel wird in Paketen geführt, gebucht wurde aber in Stück.",
-        "pruefen": "Artikel › Einheiten öffnen\nUmrechnungsfaktor (z. B. 1 Paket = 100 Stück) prüfen",
-        "loesung": "Artikel › Einheiten öffnen\nVerkaufseinheit prüfen\nPosition im Auftrag mit der richtigen Einheit neu erfassen",
-        "hinweis": "Einheiten nach der ersten Buchung nicht mehr ändern, sondern neuen Artikel anlegen."
+        "loesung": "Artikel › Einheiten: Verkaufseinheit + Umrechnungsfaktor prüfen\nPosition mit richtiger Einheit neu erfassen\nEinheit nach erster Buchung nicht ändern, ggf. neuen Artikel",
+        "rueckfragen": "In welcher Einheit wird der Artikel verkauft (Stück, Paket, Meter)?",
+        "textbaustein": "Der Artikel wird in einer anderen Einheit geführt als im Auftrag erfasst. Prüfen Sie bitte unter Artikel › Einheiten die Verkaufseinheit und erfassen Sie die Position mit der richtigen Einheit neu.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Umrechnungsfaktoren (z. B. 1 Paket = 100 Stück) gelten pro Artikel. Wird die Einheit nach Buchungen geändert, stimmen Lager und alte Belege nicht mehr."
       },
       "erstellt": "2026-09-15T09:00:00Z"
     },
@@ -751,7 +773,7 @@
       "id": "SUP-022",
       "name": "Rechnung nach Versand ändern",
       "kategorie": "Rechnungen, Gutschriften, Mahnungen und E-Rechnung",
-      "bezeichnung": "Versendete Rechnungen dürfen nicht mehr geändert werden (GoBD). Korrekt ist eine Stornorechnung und danach eine neue Rechnung.",
+      "bezeichnung": "R-100. Rechnung versendet und festgeschrieben (GoBD), nur Storno + Neurechnung.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Nach dem Versand",
@@ -763,10 +785,11 @@
         "stufe4": "Bearbeiten ist gesperrt (R-100)",
         "frage": "Wie korrigiere ich eine Rechnung, die schon raus ist?",
         "stichworte": "rechnung stornieren korrigieren ändern storno gutschrift",
-        "ursache": "Versendete Rechnungen sind festgeschrieben (GoBD).",
-        "pruefen": "Versanddatum in der Rechnung prüfen\nPrüfen, ob schon eine Zahlung zugeordnet ist",
-        "loesung": "Rechnung öffnen › Stornieren\nStornorechnung an den Kunden senden\nAuftrag korrigieren und neue Rechnung erstellen",
-        "hinweis": "Bei zugeordneter Zahlung erst die Zahlung lösen, dann stornieren."
+        "loesung": "Zahlung zugeordnet? Erst lösen\nRechnung › Stornieren\nStornorechnung an Kunden senden\nAuftrag korrigieren, neue Rechnung",
+        "rueckfragen": "Ist zu der Rechnung schon eine Zahlung eingegangen?",
+        "textbaustein": "Versendete Rechnungen dürfen nach den GoBD nicht mehr geändert werden. Stornieren Sie die Rechnung bitte über „Stornieren“, senden Sie die Stornorechnung an Ihren Kunden und erstellen Sie danach eine neue Rechnung.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Mit dem Versand wird die Rechnung festgeschrieben. Die Korrektur muss nachvollziehbar sein, deshalb Stornorechnung statt Änderung."
       },
       "erstellt": "2026-09-11T08:00:00Z"
     },
@@ -774,7 +797,7 @@
       "id": "SUP-023",
       "name": "E-Rechnung wird bei der Prüfung abgelehnt",
       "kategorie": "Rechnungen, Gutschriften, Mahnungen und E-Rechnung",
-      "bezeichnung": "Die XRechnung oder ZUGFeRD-Datei ist unvollständig. Häufig fehlen die Bankverbindung, die USt-ID oder die Leitweg-ID.",
+      "bezeichnung": "X-BR-CO-25. E-Rechnung unvollständig, meist Zahlungsbedingungen/Bank fehlen.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Versenden",
@@ -786,10 +809,11 @@
         "stufe4": "Prüfprotokoll meldet X-BR-CO-25",
         "frage": "Warum wird meine E-Rechnung abgelehnt?",
         "stichworte": "e-rechnung fehler xrechnung zugferd validierung abgelehnt",
-        "ursache": "Pflichtangaben fehlen, meist Zahlungsbedingungen oder Bankverbindung.",
-        "pruefen": "Prüfprotokoll öffnen und Regelnummer notieren\nFirmenstamm › Bank und Steuer prüfen\nKunden › E-Rechnung prüfen",
-        "loesung": "Rechnung öffnen › E-Rechnung › Prüfprotokoll anzeigen\nGemeldete Pflichtfelder im Firmen- oder Kundenstamm ergänzen\nE-Rechnung neu erzeugen und erneut prüfen",
-        "hinweis": "Regelnummern beginnen mit BR. Die Liste der Regeln gibt es im Prüfprotokoll per Klick."
+        "loesung": "Rechnung › E-Rechnung › Prüfprotokoll: Regelnummern notieren\nPflichtfelder im Firmenstamm (Bank, USt-ID) bzw. Kunde (E-Rechnung) ergänzen\nE-Rechnung neu erzeugen + prüfen",
+        "rueckfragen": "Welche Regelnummer steht im Prüfprotokoll bzw. in der Ablehnung des Empfängers?",
+        "textbaustein": "Ihre E-Rechnung wurde abgelehnt, weil Pflichtangaben fehlen. Das Prüfprotokoll in der Rechnung unter „E-Rechnung“ zeigt, welche Angaben das sind. Ergänzen Sie diese bitte im Firmen- bzw. Kundenstamm und erzeugen Sie die E-Rechnung erneut.",
+        "eskalation": "2nd Level, wenn das Prüfprotokoll fehlerfrei ist und der Empfänger trotzdem ablehnt.",
+        "begruendung": "BR-CO-25 verlangt Fälligkeitsdatum oder Zahlungsbedingungen bei positivem Betrag. Regelnummern mit BR- stammen aus der EN 16931, die Regelliste öffnet sich im Prüfprotokoll per Klick."
       },
       "erstellt": "2026-09-07T07:00:00Z"
     },
@@ -797,7 +821,7 @@
       "id": "SUP-024",
       "name": "Mahnung geht an einen Kunden, der bezahlt hat",
       "kategorie": "Rechnungen, Gutschriften, Mahnungen und E-Rechnung",
-      "bezeichnung": "Die Zahlung ist auf dem Konto eingegangen, aber noch nicht in Fakturo verbucht. Der Mahnlauf sieht die Rechnung als offen.",
+      "bezeichnung": "Zahlung eingegangen, aber nicht verbucht. Bankabgleich lief nicht vor dem Mahnlauf.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Mahnlauf",
@@ -808,10 +832,11 @@
         "stufe4": "Zahlung ist nicht verbucht",
         "frage": "Warum bekommt ein Kunde eine Mahnung, obwohl er bezahlt hat?",
         "stichworte": "mahnung trotz zahlung bezahlt offen posten bankabgleich",
-        "ursache": "Der Bankabgleich lief vor dem Mahnlauf nicht.",
-        "pruefen": "Offene Posten des Kunden öffnen\nKontoauszug-Import des Tages prüfen\nVerwendungszweck der Zahlung mit der Rechnungsnummer vergleichen",
-        "loesung": "Vor jedem Mahnlauf den Bankabgleich ausführen\nZahlung der Rechnung zuordnen\nMahnung stornieren und Kunden informieren",
-        "hinweis": "Mahnlauf so einstellen, dass vorher automatisch abgeglichen wird."
+        "loesung": "OP des Kunden prüfen\nKontoauszug-Import des Tages prüfen\nZahlung der Rechnung zuordnen\nMahnung stornieren\nMahnlauf: „vorher Bankabgleich“ aktivieren",
+        "rueckfragen": "Wann und unter welchem Verwendungszweck ist die Zahlung eingegangen?",
+        "textbaustein": "Die Zahlung war auf Ihrem Konto eingegangen, aber noch nicht in Fakturo zugeordnet. Bitte ordnen Sie die Zahlung der Rechnung zu, stornieren Sie die Mahnung und informieren Sie Ihren Kunden. Damit das nicht wieder vorkommt, können Sie den Mahnlauf so einstellen, dass vorher automatisch der Bankabgleich läuft.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Der Mahnlauf berücksichtigt nur verbuchte Zahlungen. Ohne vorherigen Bankabgleich gelten bezahlte Rechnungen weiter als offen."
       },
       "erstellt": "2026-09-03T06:00:00Z"
     },
@@ -819,7 +844,7 @@
       "id": "SUP-025",
       "name": "Rechnung per E-Mail kommt nicht an",
       "kategorie": "Rechnungen, Gutschriften, Mahnungen und E-Rechnung",
-      "bezeichnung": "Der Mailserver lehnt die Nachricht ab, oft wegen falscher Absenderadresse oder zu großem Anhang.",
+      "bezeichnung": "M-550. Mailserver lehnt ab, meist Absender passt nicht zum Konto oder Anhang zu groß.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Versenden",
@@ -831,10 +856,11 @@
         "stufe4": "Versandprotokoll meldet M-550",
         "frage": "Warum kommt meine Rechnungs-Mail nicht an?",
         "stichworte": "email versand rechnung kommt nicht an smtp spam",
-        "ursache": "Der Mailserver hat die Nachricht abgelehnt.",
-        "pruefen": "Rechnung › Versandprotokoll öffnen\nFehlermeldung des Mailservers vorlesen lassen\nTestmail an eine andere Adresse senden",
-        "loesung": "Einstellungen › E-Mail › Testmail senden\nAbsenderadresse muss zum Mailkonto passen\nAnhänge über 10 MB als Link senden",
-        "hinweis": "Beim Mailserver des Kunden (IT-Dienstleister) liegt die Lösung, nicht in Fakturo."
+        "loesung": "Rechnung › Versandprotokoll: Serverantwort lesen\nEinstellungen › E-Mail › Testmail\nAbsenderadresse = Mailkonto\nAnhänge > 10 MB als Link",
+        "rueckfragen": "Wie lautet die Fehlermeldung im Versandprotokoll?\nWer betreut Ihren Mailserver?",
+        "textbaustein": "Ihr Mailserver hat die Nachricht abgelehnt. Prüfen Sie bitte unter Einstellungen › E-Mail, ob die Absenderadresse zu Ihrem Mailkonto passt, und senden Sie eine Testmail. Bleibt der Fehler, wenden Sie sich bitte mit der Meldung aus dem Versandprotokoll an Ihren IT-Dienstleister.",
+        "eskalation": "Keine Eskalation. Liegt beim IT-Dienstleister des Kunden.",
+        "begruendung": "550 ist eine dauerhafte Ablehnung des Mailservers (z. B. Absender nicht erlaubt, SPF, Größenlimit). Fakturo übergibt nur an den Server, die Lösung liegt dort."
       },
       "erstellt": "2026-09-04T05:00:00Z"
     },
@@ -842,7 +868,7 @@
       "id": "SUP-026",
       "name": "Schlussrechnung zieht Abschläge nicht ab",
       "kategorie": "Rechnungen, Gutschriften, Mahnungen und E-Rechnung",
-      "bezeichnung": "Abschlagsrechnungen werden nur abgezogen, wenn sie mit demselben Auftrag verknüpft sind.",
+      "bezeichnung": "Abschlagsrechnungen ohne Auftragsverknüpfung, werden in der Schlussrechnung nicht abgezogen.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Abrechnen",
@@ -853,10 +879,11 @@
         "stufe4": "Abschläge ohne Auftragsverknüpfung",
         "frage": "Warum werden Abschlagszahlungen in der Schlussrechnung nicht abgezogen?",
         "stichworte": "abschlag schlussrechnung abschlagsrechnung teilrechnung",
-        "ursache": "Die Abschlagsrechnungen wurden ohne Auftrag geschrieben.",
-        "pruefen": "Abschlagsrechnungen des Kunden auflisten\nFeld „Auftrag“ in jeder Abschlagsrechnung prüfen",
-        "loesung": "Abschlagsrechnungen öffnen und Auftrag prüfen\nFehlende Verknüpfung über „Auftrag zuordnen“ setzen\nSchlussrechnung neu erzeugen",
-        "hinweis": "Ist die Schlussrechnung versendet, Storno und neue Schlussrechnung."
+        "loesung": "Abschlagsrechnungen des Kunden: Feld Auftrag prüfen\n„Auftrag zuordnen“\nSchlussrechnung neu erzeugen\nSchon versendet: Storno + neue Schlussrechnung",
+        "rueckfragen": "Welche Abschlagsrechnungen gehören zu dem Auftrag?\nWurde die Schlussrechnung schon versendet?",
+        "textbaustein": "Die Abschlagsrechnungen wurden ohne Bezug zum Auftrag erstellt, deshalb zieht die Schlussrechnung sie nicht ab. Öffnen Sie bitte jede Abschlagsrechnung, verknüpfen Sie sie über „Auftrag zuordnen“ mit dem Auftrag und erzeugen Sie die Schlussrechnung neu.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Fakturo zieht nur Abschläge ab, die demselben Auftrag zugeordnet sind, damit keine fremden Abschläge verrechnet werden."
       },
       "erstellt": "2026-08-31T04:00:00Z"
     },
@@ -864,7 +891,7 @@
       "id": "SUP-027",
       "name": "Empfangene E-Rechnung lässt sich nicht lesen",
       "kategorie": "Rechnungen, Gutschriften, Mahnungen und E-Rechnung",
-      "bezeichnung": "Ein Lieferant hat eine XRechnung als XML geschickt. Ohne Import zeigt Windows nur Code.",
+      "bezeichnung": "Eingangs-XRechnung ist reines XML ohne Sichtbeleg, muss importiert werden.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Empfang",
@@ -875,10 +902,11 @@
         "stufe4": "Nur XML-Datei, kein Sichtbeleg",
         "frage": "Wie öffne ich eine XRechnung von einem Lieferanten?",
         "stichworte": "e-rechnung empfangen xml lesen eingangsrechnung xrechnung",
-        "ursache": "Eine reine XRechnung hat kein PDF. Fakturo erzeugt die Ansicht beim Import.",
-        "pruefen": "Dateiendung prüfen (.xml)\nEingangsrechnungen › Import nutzen statt Datei doppelklicken",
-        "loesung": "Eingangsrechnungen › Importieren wählen\nXML-Datei auswählen\nFakturo zeigt die Rechnung als lesbaren Beleg",
-        "hinweis": "Seit 2025 müssen Betriebe E-Rechnungen empfangen können."
+        "loesung": "Eingangsrechnungen › Importieren\nXML wählen\nFakturo erzeugt lesbare Ansicht",
+        "rueckfragen": "Hat die Datei die Endung .xml?",
+        "textbaustein": "Eine XRechnung ist eine reine XML-Datei ohne PDF. Öffnen Sie sie bitte nicht per Doppelklick, sondern über Eingangsrechnungen › Importieren. Fakturo zeigt die Rechnung dann als lesbaren Beleg.",
+        "eskalation": "2nd Level, wenn der Import mit Fehler abbricht.",
+        "begruendung": "Seit 2025 müssen Betriebe E-Rechnungen empfangen können. Die XRechnung enthält nur strukturierte Daten, die Ansicht erzeugt Fakturo beim Import."
       },
       "erstellt": "2026-08-27T03:00:00Z"
     },
@@ -886,7 +914,7 @@
       "id": "SUP-028",
       "name": "Falsche Mahnstufe oder Mahngebühr",
       "kategorie": "Rechnungen, Gutschriften, Mahnungen und E-Rechnung",
-      "bezeichnung": "Ein Kunde bekommt eine höhere Mahnstufe oder Gebühr als erwartet.",
+      "bezeichnung": "Abweichende Mahnstufen am Kunden überschreiben Standard.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Mahnlauf",
@@ -897,10 +925,11 @@
         "stufe4": "Mahnstufen beim Kunden abweichend eingestellt",
         "frage": "Warum ist die Mahngebühr falsch?",
         "stichworte": "mahnstufe mahngebühr mahnung falsch",
-        "ursache": "Am Kunden sind eigene Mahnstufen eingestellt, die die Standardwerte überschreiben.",
-        "pruefen": "Einstellungen › Mahnwesen ansehen\nKunden › Konditionen › Mahnwesen vergleichen",
-        "loesung": "Einstellungen › Mahnwesen prüfen\nKunden › Konditionen › Mahnwesen angleichen\nMahnung stornieren und neu erstellen",
-        "hinweis": "Gebühren dürfen nur mit Grundlage im Vertrag berechnet werden."
+        "loesung": "Einstellungen › Mahnwesen vs. Kunde › Konditionen › Mahnwesen vergleichen\nAm Kunden angleichen\nMahnung stornieren und neu erstellen",
+        "rueckfragen": "Welche Mahnstufen und Gebühren sind mit dem Kunden vereinbart?",
+        "textbaustein": "Bei diesem Kunden sind eigene Mahnstufen hinterlegt, die die Standardwerte überschreiben. Gleichen Sie bitte unter Kunde › Konditionen › Mahnwesen die Werte an und erstellen Sie die Mahnung neu.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Kundenbezogene Mahneinstellungen gehen vor den globalen. Mahngebühren dürfen nur mit vertraglicher Grundlage berechnet werden."
       },
       "erstellt": "2026-08-23T09:00:00Z"
     },
@@ -908,7 +937,7 @@
       "id": "SUP-029",
       "name": "Überstunden werden falsch berechnet",
       "kategorie": "Personal, Arbeitszeiten, Urlaub und Zeitkonten",
-      "bezeichnung": "Meist ist das Arbeitszeitmodell (Sollzeit pro Tag) falsch oder der Feiertagskalender auf das falsche Bundesland gestellt.",
+      "bezeichnung": "Sollzeit im Arbeitszeitmodell oder Feiertagskalender (Bundesland) falsch.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Monatsabschluss",
@@ -919,10 +948,11 @@
         "stufe4": "Falsches Arbeitszeitmodell oder Feiertagskalender",
         "frage": "Warum stimmen die Überstunden nicht?",
         "stichworte": "überstunden falsch sollzeit zeitkonto feiertag",
-        "ursache": "Sollzeit oder Feiertage passen nicht zur Person.",
-        "pruefen": "Monatsauswertung der Person öffnen\nSollzeit pro Tag mit dem Vertrag vergleichen\nFeiertage im Monat zählen",
-        "loesung": "Personal › Person › Arbeitszeitmodell prüfen\nEinstellungen › Feiertage › Bundesland prüfen\nZeitkonto für den Monat neu berechnen",
-        "hinweis": "Gültig-ab-Datum beim Arbeitszeitmodell beachten."
+        "loesung": "Monatsauswertung der Person öffnen\nPersonal › Person › Arbeitszeitmodell: Sollzeit + Gültig-ab prüfen\nEinstellungen › Feiertage › Bundesland\nZeitkonto für den Monat neu berechnen",
+        "rueckfragen": "Welche Person und welcher Monat sind betroffen?\nWie viele Stunden pro Tag stehen im Arbeitsvertrag?",
+        "textbaustein": "Die Überstunden ergeben sich aus der Sollzeit im Arbeitszeitmodell und dem Feiertagskalender. Prüfen Sie bitte bei der Person das Arbeitszeitmodell (Sollzeit und Gültig-ab-Datum) und unter Einstellungen › Feiertage das Bundesland. Danach das Zeitkonto für den Monat neu berechnen.",
+        "eskalation": "2nd Level, wenn Modell und Feiertage stimmen und der Saldo nach Neuberechnung trotzdem abweicht.",
+        "begruendung": "Saldo = Ist minus Soll. Falsche Sollzeit oder fehlende Feiertage verschieben den Saldo jeden Tag. Ein falsches Gültig-ab-Datum lässt ein altes Modell weiterlaufen."
       },
       "erstellt": "2026-08-19T08:00:00Z"
     },
@@ -930,7 +960,7 @@
       "id": "SUP-030",
       "name": "Pause wird doppelt abgezogen",
       "kategorie": "Personal, Arbeitszeiten, Urlaub und Zeitkonten",
-      "bezeichnung": "Die automatische Pausenregel (30 Minuten ab 6 Stunden) zieht ab, obwohl die Pause am Terminal gestempelt wurde.",
+      "bezeichnung": "Automatische Pausenregel zieht zusätzlich zur gestempelten Pause ab.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Monatsabschluss",
@@ -942,10 +972,11 @@
         "stufe4": "Automatische Pausenregel zieht zusätzlich ab",
         "frage": "Warum wird meine Pause doppelt abgezogen?",
         "stichworte": "pause doppelt abgezogen automatisch pausenregel",
-        "ursache": "Die Pausenregel zieht immer ab, statt nur zu ergänzen.",
-        "pruefen": "Tag mit Buchungen öffnen\nGestempelte und automatische Pause vergleichen",
-        "loesung": "Arbeitszeitmodell öffnen\nPausenregel auf „Nur ergänzen, wenn zu wenig Pause gestempelt“ stellen\nZeitkonto neu berechnen",
-        "hinweis": "Gesetzlich: 30 Minuten ab 6 Stunden, 45 Minuten ab 9 Stunden."
+        "loesung": "Arbeitszeitmodell › Pausenregel: „Nur ergänzen, wenn zu wenig Pause gestempelt“\nZeitkonto neu berechnen",
+        "rueckfragen": "Stempeln Ihre Mitarbeitenden die Pause am Terminal?",
+        "textbaustein": "Die automatische Pausenregel zieht derzeit immer ab, auch wenn die Pause gestempelt wurde. Stellen Sie bitte im Arbeitszeitmodell die Pausenregel auf „Nur ergänzen, wenn zu wenig Pause gestempelt“ und berechnen Sie das Zeitkonto neu.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "§ 4 ArbZG: 30 Minuten ab 6 Stunden, 45 Minuten ab 9 Stunden. Die Regel soll fehlende Pausen ergänzen, nicht gestempelte doppelt abziehen."
       },
       "erstellt": "2026-08-20T07:00:00Z"
     },
@@ -953,7 +984,7 @@
       "id": "SUP-031",
       "name": "Monatsabschluss lässt sich nicht durchführen",
       "kategorie": "Personal, Arbeitszeiten, Urlaub und Zeitkonten",
-      "bezeichnung": "Es gibt noch unvollständige Buchungen, zum Beispiel ein „Kommen“ ohne „Gehen“.",
+      "bezeichnung": "P-404. Unvollständige Buchungen (Kommen ohne Gehen) blockieren den Monatsabschluss.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Monatsabschluss",
@@ -965,10 +996,11 @@
         "stufe4": "Fehlerliste zeigt Kommen ohne Gehen (P-404)",
         "frage": "Warum klappt der Monatsabschluss nicht?",
         "stichworte": "monatsabschluss fehlbuchung kommen gehen fehlt",
-        "ursache": "Unvollständige Buchungen blockieren den Abschluss.",
-        "pruefen": "Personal › Fehlerliste öffnen\nAnzahl der Fehler notieren",
-        "loesung": "Personal › Fehlerliste öffnen\nFehlende Buchungen ergänzen oder als Abwesenheit kennzeichnen\nMonatsabschluss erneut starten",
-        "hinweis": "Nach dem Abschluss sind Korrekturen nur mit Admin-Recht möglich."
+        "loesung": "Personal › Fehlerliste\nFehlende Buchungen ergänzen oder als Abwesenheit kennzeichnen\nMonatsabschluss erneut starten",
+        "rueckfragen": "Wie viele Einträge stehen in der Fehlerliste?",
+        "textbaustein": "Der Monatsabschluss ist erst möglich, wenn alle Buchungen vollständig sind. Unter Personal › Fehlerliste sehen Sie, wo zum Beispiel ein „Gehen“ fehlt. Ergänzen Sie diese Buchungen bitte oder kennzeichnen Sie den Tag als Abwesenheit und starten Sie den Abschluss erneut.",
+        "eskalation": "Keine Eskalation. Nach Abschluss sind Korrekturen nur mit Admin-Recht möglich.",
+        "begruendung": "Ein Abschluss mit offenen Buchungen würde falsche Salden festschreiben. Deshalb prüft Fakturo vorher auf Vollständigkeit."
       },
       "erstellt": "2026-08-16T06:00:00Z"
     },
@@ -976,7 +1008,7 @@
       "id": "SUP-032",
       "name": "Urlaub zählt nicht als Arbeitszeit",
       "kategorie": "Personal, Arbeitszeiten, Urlaub und Zeitkonten",
-      "bezeichnung": "Die Abwesenheit wurde als „unbezahlt“ statt „Urlaub“ erfasst, deshalb fehlt die Sollzeit-Gutschrift.",
+      "bezeichnung": "Abwesenheit als „unbezahlt“ statt „Urlaub“/„Krank“ erfasst, keine Sollzeit-Gutschrift.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Monatsabschluss",
@@ -987,10 +1019,11 @@
         "stufe4": "Abwesenheitsart „unbezahlt“",
         "frage": "Warum fehlen Stunden an Urlaubstagen?",
         "stichworte": "urlaub krank abwesenheit sollzeit gutschrift",
-        "ursache": "Falsche Abwesenheitsart.",
-        "pruefen": "Abwesenheiten der Person im Monat öffnen\nSpalte „Art“ prüfen",
-        "loesung": "Personal › Abwesenheiten öffnen\nArt auf „Urlaub“ oder „Krank“ ändern\nZeitkonto neu berechnen",
-        "hinweis": "Krankheit gibt ebenfalls Sollzeit gut, unbezahlter Urlaub nicht."
+        "loesung": "Personal › Abwesenheiten der Person: Spalte Art\nArt auf „Urlaub“ oder „Krank“\nZeitkonto neu berechnen",
+        "rueckfragen": "Um welche Person und welche Tage geht es?",
+        "textbaustein": "Die Abwesenheit ist als „unbezahlt“ erfasst, deshalb wird keine Sollzeit gutgeschrieben. Ändern Sie bitte unter Personal › Abwesenheiten die Art auf „Urlaub“ bzw. „Krank“ und berechnen Sie das Zeitkonto neu.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Urlaub und Krankheit schreiben die Sollzeit gut, unbezahlter Urlaub nicht. Die Art bestimmt die Wirkung auf das Zeitkonto."
       },
       "erstellt": "2026-08-12T05:00:00Z"
     },
@@ -998,7 +1031,7 @@
       "id": "SUP-033",
       "name": "Nachtschicht wird an Mitternacht geteilt",
       "kategorie": "Personal, Arbeitszeiten, Urlaub und Zeitkonten",
-      "bezeichnung": "Eine Schicht von 22 bis 6 Uhr erscheint als zwei Arbeitstage. Sollzeit und Pausen werden dadurch falsch berechnet.",
+      "bezeichnung": "Kein Tageswechsel im Arbeitszeitmodell, Nachtschicht wird um 0 Uhr geteilt.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Monatsabschluss",
@@ -1009,10 +1042,11 @@
         "stufe4": "Arbeitszeitmodell ohne Nachtschicht-Regel",
         "frage": "Warum wird meine Nachtschicht geteilt?",
         "stichworte": "nachtschicht mitternacht geteilt nachtdienst",
-        "ursache": "Ohne Nachtschicht-Regel endet jeder Arbeitstag um 0 Uhr.",
-        "pruefen": "Buchungen einer Nachtschicht öffnen\nArbeitszeitmodell › Tageswechsel prüfen",
-        "loesung": "Arbeitszeitmodell öffnen\nTageswechsel auf 6:00 Uhr stellen\nZeitkonto neu berechnen",
-        "hinweis": "Typisch im Wachdienst. Tageswechsel z. B. auf 6 Uhr stellen."
+        "loesung": "Arbeitszeitmodell › Tageswechsel auf 6:00\nZeitkonto neu berechnen",
+        "rueckfragen": "Von wann bis wann gehen die Nachtschichten?",
+        "textbaustein": "Ohne Nachtschicht-Regel endet jeder Arbeitstag um 0 Uhr, deshalb erscheint eine Schicht von 22 bis 6 Uhr als zwei Tage. Stellen Sie bitte im Arbeitszeitmodell den Tageswechsel auf 6:00 Uhr und berechnen Sie das Zeitkonto neu.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Typisch im Wachdienst. Mit Tageswechsel nach Schichtende wird die Schicht dem Starttag zugeordnet, Sollzeit und Pausen stimmen dann."
       },
       "erstellt": "2026-08-08T04:00:00Z"
     },
@@ -1020,7 +1054,7 @@
       "id": "SUP-034",
       "name": "Resturlaub ist falsch",
       "kategorie": "Personal, Arbeitszeiten, Urlaub und Zeitkonten",
-      "bezeichnung": "Im neuen Jahr fehlt der Resturlaub aus dem Vorjahr.",
+      "bezeichnung": "Jahreswechsel nicht durchgeführt, Resturlaub nicht übertragen.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Zum Jahreswechsel",
@@ -1031,10 +1065,11 @@
         "stufe4": "Jahreswechsel nicht durchgeführt",
         "frage": "Warum fehlt mein Resturlaub?",
         "stichworte": "resturlaub urlaubskonto jahreswechsel",
-        "ursache": "Der Resturlaub wird erst mit dem Jahreswechsel übertragen.",
-        "pruefen": "Personal › Urlaubskonto ansehen\nPrüfen, ob „Jahreswechsel durchführen“ gelaufen ist",
-        "loesung": "Personal › Jahreswechsel öffnen\nJahreswechsel durchführen\nUrlaubskonten prüfen",
-        "hinweis": "Verfallsregeln (z. B. 31. März) in den Einstellungen prüfen."
+        "loesung": "Personal › Jahreswechsel durchführen\nUrlaubskonten prüfen\nVerfallsregeln (z. B. 31.03.) in den Einstellungen prüfen",
+        "rueckfragen": "Sind Verfallsregeln für Resturlaub vereinbart?",
+        "textbaustein": "Der Resturlaub wird erst mit dem Jahreswechsel übertragen. Führen Sie bitte unter Personal › Jahreswechsel den Jahreswechsel durch und prüfen Sie danach die Urlaubskonten.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Der Jahreswechsel ist bewusst ein manueller Schritt, damit Korrekturen am Vorjahr vorher abgeschlossen werden können."
       },
       "erstellt": "2026-08-04T03:00:00Z"
     },
@@ -1042,7 +1077,7 @@
       "id": "SUP-035",
       "name": "Terminal ist offline, Zeiten kommen nicht an",
       "kategorie": "Zeiterfassungsterminals, Chips und Ausweise",
-      "bezeichnung": "Das Terminal hat keine Verbindung zum Fakturo-Server. Buchungen bleiben im Terminalspeicher, bis die Verbindung wieder steht.",
+      "bezeichnung": "T-01. Terminal erreicht Terminalserver nicht, Buchungen liegen im Gerätespeicher.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Stempeln",
@@ -1054,10 +1089,11 @@
         "stufe4": "Display zeigt „Offline“ (T-01)",
         "frage": "Warum kommen die Zeiten vom Terminal nicht an?",
         "stichworte": "terminal offline verbindung netzwerk zeiten fehlen",
-        "ursache": "Das Terminal erreicht den Terminalserver nicht.",
-        "pruefen": "Display-Anzeige vorlesen lassen\nNetzwerkkabel und Link-LED prüfen\nGeräte › Terminals › Verbindung testen",
-        "loesung": "Am Terminal Netzwerkkabel und Anzeige „Online“ prüfen\nIn Fakturo Geräte › Terminals › Verbindung testen\nPrüfen, ob der Dienst „Fakturo Terminalserver“ läuft\n„Buchungen abholen“ wählen",
-        "hinweis": "Das Terminal speichert ca. 10.000 Buchungen. Es geht nichts verloren."
+        "loesung": "Display „Offline“? Kabel + Link-LED prüfen\nGeräte › Terminals › Verbindung testen\nDienst „Fakturo Terminalserver“ läuft?\n„Buchungen abholen“\nAlle Terminals offline: SUP-040",
+        "rueckfragen": "Was zeigt das Display genau?\nLeuchtet die LED am Netzwerkanschluss?\nSind andere Terminals ebenfalls offline?",
+        "textbaustein": "Das Terminal hat keine Verbindung zum Fakturo-Server. Die Buchungen bleiben im Terminal gespeichert, es geht nichts verloren. Prüfen Sie bitte das Netzwerkkabel und testen Sie unter Geräte › Terminals die Verbindung. Sobald das Terminal wieder online ist, wählen Sie „Buchungen abholen“.",
+        "eskalation": "2nd Level, wenn Netz und Dienst in Ordnung sind und der Verbindungstest trotzdem scheitert.",
+        "begruendung": "Das Terminal puffert ca. 10.000 Buchungen. Häufigste Ursachen: Kabel/Switch-Port, geänderte IP, gestoppter Terminaldienst."
       },
       "erstellt": "2026-08-05T09:00:00Z"
     },
@@ -1065,7 +1101,7 @@
       "id": "SUP-036",
       "name": "Chip wird am Terminal nicht erkannt",
       "kategorie": "Zeiterfassungsterminals, Chips und Ausweise",
-      "bezeichnung": "Der Chip ist keiner Person zugeordnet oder hat einen Typ, den der Leser nicht kann (z. B. 125 kHz statt MIFARE).",
+      "bezeichnung": "T-12. Chip keiner Person zugeordnet oder falscher Chiptyp (125 kHz statt MIFARE).",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Stempeln",
@@ -1077,10 +1113,11 @@
         "stufe4": "Terminal meldet „Unbekannter Ausweis“ (T-12)",
         "frage": "Warum wird mein Chip nicht erkannt?",
         "stichworte": "chip nicht erkannt ausweis karte rfid unbekannt",
-        "ursache": "Chip ist keiner Person zugeordnet oder hat den falschen Typ.",
-        "pruefen": "Ausweisnummer bei der Person prüfen\nAnderen Chip testen\nChiptyp ablesen (MIFARE, 125 kHz)",
-        "loesung": "Personal › Person › Ausweisnummer prüfen\nChip am Terminal im Lernmodus einlesen und zuordnen\nChiptyp mit den Angaben des Terminals vergleichen",
-        "hinweis": "Ersatzchips nur mit passendem Typ bestellen."
+        "loesung": "Personal › Person › Ausweisnummer prüfen\nAnderen Chip testen\nChip im Lernmodus am Terminal einlesen + zuordnen\nChiptyp mit Terminalangaben vergleichen",
+        "rueckfragen": "Ist es ein neuer oder ein Ersatzchip?\nFunktioniert ein anderer Chip am selben Terminal?",
+        "textbaustein": "Das Terminal kennt den Chip nicht. Bitte prüfen Sie bei der Person die Ausweisnummer und lesen Sie den Chip bei Bedarf im Lernmodus am Terminal ein. Ersatzchips müssen denselben Typ haben wie die bisherigen.",
+        "eskalation": "2nd Level, wenn kein Chip mehr gelesen wird (Leser defekt).",
+        "begruendung": "Leser unterstützen nur bestimmte Chiptypen. Ein Chip falschen Typs wird gar nicht gelesen, ein unbekannter Chip richtigen Typs liefert T-12."
       },
       "erstellt": "2026-08-01T08:00:00Z"
     },
@@ -1088,7 +1125,7 @@
       "id": "SUP-037",
       "name": "Uhrzeit am Terminal ist falsch",
       "kategorie": "Zeiterfassungsterminals, Chips und Ausweise",
-      "bezeichnung": "Nach der Zeitumstellung oder einem Stromausfall stimmt die Uhr nicht, weil kein Zeitserver eingetragen ist.",
+      "bezeichnung": "Kein NTP eingetragen, Zeitumstellung fehlt, Abweichung 1 h.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Nach Zeitumstellung",
@@ -1099,10 +1136,11 @@
         "stufe4": "Abweichung genau eine Stunde",
         "frage": "Warum zeigt das Terminal die falsche Uhrzeit?",
         "stichworte": "uhrzeit falsch sommerzeit winterzeit terminal ntp",
-        "ursache": "Kein Zeitserver eingetragen, Zeitumstellung fehlt.",
-        "pruefen": "Uhrzeit am Display mit der echten Zeit vergleichen\nGeräte › Terminals › Einstellungen › NTP prüfen",
-        "loesung": "Geräte › Terminals › Einstellungen öffnen\nZeitserver (NTP) eintragen\n„Uhrzeit senden“ wählen und betroffene Buchungen prüfen",
-        "hinweis": "Buchungen seit der Umstellung mit „Zeiten verschieben“ korrigieren."
+        "loesung": "Geräte › Terminals › Einstellungen › NTP eintragen\n„Uhrzeit senden“\nBuchungen seit Umstellung mit „Zeiten verschieben“ korrigieren",
+        "rueckfragen": "Seit wann ist die Uhrzeit falsch?\nBetrifft es alle Terminals?",
+        "textbaustein": "Am Terminal ist kein Zeitserver eingetragen, deshalb wurde die Zeitumstellung nicht übernommen. Tragen Sie bitte unter Geräte › Terminals › Einstellungen einen Zeitserver ein und wählen Sie „Uhrzeit senden“. Buchungen seit der Umstellung können Sie mit „Zeiten verschieben“ korrigieren.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Ohne NTP läuft die interne Uhr frei und übernimmt keine Sommer-/Winterzeit. Nach Stromausfall kann sie ebenfalls zurückspringen."
       },
       "erstellt": "2026-07-28T07:00:00Z"
     },
@@ -1110,7 +1148,7 @@
       "id": "SUP-038",
       "name": "Doppelte Buchungen nach zweimal Vorhalten",
       "kategorie": "Zeiterfassungsterminals, Chips und Ausweise",
-      "bezeichnung": "Wird der Chip zweimal kurz hintereinander vorgehalten, entstehen Kommen und Gehen in einer Minute.",
+      "bezeichnung": "Keine Sperrzeit am Terminal, doppeltes Vorhalten erzeugt Kommen + Gehen in einer Minute.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Stempeln",
@@ -1121,10 +1159,11 @@
         "stufe4": "Kommen und Gehen in derselben Minute",
         "frage": "Woher kommen doppelte Buchungen?",
         "stichworte": "doppelt buchung zweimal gestempelt sperrzeit",
-        "ursache": "Keine Sperrzeit zwischen zwei Buchungen.",
-        "pruefen": "Buchungsliste der Person öffnen\nAbstand der doppelten Buchungen prüfen",
-        "loesung": "Geräte › Terminals › Sperrzeit auf 2 Minuten setzen\nDoppelte Buchungen in der Buchungsliste löschen",
-        "hinweis": "Sperrzeit nicht über 5 Minuten setzen."
+        "loesung": "Geräte › Terminals › Sperrzeit 2 Min.\nDoppelte Buchungen in der Buchungsliste löschen\nSperrzeit nicht über 5 Min.",
+        "rueckfragen": "Welche Personen und Tage sind betroffen?",
+        "textbaustein": "Wird der Chip kurz hintereinander zweimal vorgehalten, entstehen Kommen und Gehen in derselben Minute. Setzen Sie bitte unter Geräte › Terminals eine Sperrzeit von 2 Minuten und löschen Sie die doppelten Buchungen in der Buchungsliste.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Die Sperrzeit ignoriert eine zweite Buchung derselben Person im Zeitraum. Zu lange Sperrzeiten verhindern echte kurze Unterbrechungen."
       },
       "erstellt": "2026-07-24T06:00:00Z"
     },
@@ -1132,7 +1171,7 @@
       "id": "SUP-039",
       "name": "Neue Person kann nicht stempeln",
       "kategorie": "Zeiterfassungsterminals, Chips und Ausweise",
-      "bezeichnung": "Neue Mitarbeitende werden erst nach dem Übertragen der Stammdaten am Terminal bekannt.",
+      "bezeichnung": "T-12 bei neuer Person. Stammdaten noch nicht ans Terminal gesendet.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Nach dem Anlegen",
@@ -1144,10 +1183,11 @@
         "stufe4": "Terminal meldet „Unbekannter Ausweis“ (T-12)",
         "frage": "Warum kann ein neuer Mitarbeiter nicht stempeln?",
         "stichworte": "neuer mitarbeiter terminal stempeln personal übertragen",
-        "ursache": "Stammdaten wurden nicht an das Terminal gesendet.",
-        "pruefen": "Datum der letzten Stammdatenübertragung prüfen\nAusweisnummer bei der Person prüfen",
-        "loesung": "Person anlegen und Ausweis zuordnen\nGeräte › Terminals › „Stammdaten senden“\nTestbuchung am Terminal machen",
-        "hinweis": "Automatische Übertragung jede Nacht in den Einstellungen aktivieren."
+        "loesung": "Person + Ausweis prüfen\nGeräte › Terminals › „Stammdaten senden“\nTestbuchung\nNächtliche Übertragung aktivieren",
+        "rueckfragen": "Wann wurde die Person angelegt?",
+        "textbaustein": "Neue Mitarbeitende kennt das Terminal erst, wenn die Stammdaten übertragen wurden. Wählen Sie bitte unter Geräte › Terminals „Stammdaten senden“ und lassen Sie eine Testbuchung machen. In den Einstellungen können Sie die automatische nächtliche Übertragung aktivieren.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Terminals arbeiten mit einer lokalen Personenliste, damit sie auch offline buchen können. Änderungen müssen deshalb übertragen werden."
       },
       "erstellt": "2026-07-20T05:00:00Z"
     },
@@ -1155,7 +1195,7 @@
       "id": "SUP-040",
       "name": "Alle Terminals sind offline",
       "kategorie": "Zeiterfassungsterminals, Chips und Ausweise",
-      "bezeichnung": "Alle Terminals melden gleichzeitig Offline. Ursache ist meist der Terminaldienst auf dem Server.",
+      "bezeichnung": "T-01 an allen Terminals. Dienst „Fakturo Terminalserver“ läuft nicht (meist nach Windows-Update/Neustart).",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Stempeln",
@@ -1167,10 +1207,11 @@
         "stufe4": "Dienst „Fakturo Terminalserver“ läuft nicht",
         "frage": "Warum sind alle Terminals offline?",
         "stichworte": "alle terminals offline server dienst",
-        "ursache": "Nach einem Windows-Update oder Neustart des Servers ist der Dienst nicht gestartet.",
-        "pruefen": "Auf dem Server Dienste öffnen\nStatus von „Fakturo Terminalserver“ prüfen\nEreignisanzeige auf Fehler prüfen",
-        "loesung": "Auf dem Server Dienste öffnen\n„Fakturo Terminalserver“ starten\nStarttyp auf „Automatisch (verzögert)“ setzen\nIn Fakturo „Buchungen abholen“ wählen",
-        "hinweis": "Starttyp des Dienstes auf „Automatisch (verzögert)“ setzen."
+        "loesung": "Server › Dienste: „Fakturo Terminalserver“ starten\nStarttyp „Automatisch (verzögert)“\nEreignisanzeige auf Fehler prüfen\nFakturo › „Buchungen abholen“",
+        "rueckfragen": "Wurde der Server kürzlich neu gestartet oder aktualisiert?\nHat jemand vor Ort Zugriff auf den Server?",
+        "textbaustein": "Alle Terminals sind offline, weil der Dienst „Fakturo Terminalserver“ auf Ihrem Server nicht läuft. Bitte starten Sie ihn unter Dienste und stellen Sie den Starttyp auf „Automatisch (verzögert)“. Danach in Fakturo „Buchungen abholen“ wählen. Es gehen keine Buchungen verloren.",
+        "eskalation": "2nd Level, wenn der Dienst nicht startet oder sofort wieder stoppt (Ereignisanzeige mitschicken).",
+        "begruendung": "Nach Updates startet der Dienst teils vor dem Netzwerk bzw. der Datenbank und beendet sich. Verzögerter Start behebt das."
       },
       "erstellt": "2026-07-21T04:00:00Z"
     },
@@ -1178,7 +1219,7 @@
       "id": "SUP-041",
       "name": "Terminal reagiert nicht, Display dunkel",
       "kategorie": "Zeiterfassungsterminals, Chips und Ausweise",
-      "bezeichnung": "Das Terminal zeigt nichts an und nimmt keine Buchungen an.",
+      "bezeichnung": "Display dunkel, keine Stromversorgung (meist PoE vom Switch).",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Stempeln",
@@ -1189,10 +1230,11 @@
         "stufe4": "Display bleibt dunkel",
         "frage": "Was tun, wenn das Terminal dunkel bleibt?",
         "stichworte": "terminal dunkel aus strom reagiert nicht",
-        "ursache": "Keine Stromversorgung, meist über Netzwerk (PoE) vom Switch.",
-        "pruefen": "Prüfen, ob die LED am Netzwerkport leuchtet\nAnderen Switch-Port testen\nNetzteil testen, falls vorhanden",
-        "loesung": "Netzwerkkabel am Switch umstecken\nNetzteil prüfen, falls vorhanden\nTerminal 30 Sekunden stromlos machen und neu starten",
-        "hinweis": "Bleibt das Display dunkel: Austauschgerät über den 2nd Level."
+        "loesung": "LED am Switch-Port prüfen\nAnderen Port testen\nNetzteil prüfen, falls vorhanden\n30 Sek. stromlos, neu starten",
+        "rueckfragen": "Leuchtet am Switch-Port eine LED?\nWurde am Netzwerk etwas umgebaut?",
+        "textbaustein": "Das Terminal bekommt offenbar keinen Strom. Es wird in der Regel über das Netzwerkkabel versorgt. Stecken Sie das Kabel bitte am Switch auf einen anderen Port und machen Sie das Terminal 30 Sekunden stromlos.",
+        "eskalation": "2nd Level für Austauschgerät, wenn das Display nach Port- und Netzteilwechsel dunkel bleibt.",
+        "begruendung": "PoE-Ports können abgeschaltet sein oder das Leistungsbudget des Switches reicht nicht. Ein Portwechsel grenzt das schnell ein."
       },
       "erstellt": "2026-07-17T03:00:00Z"
     },
@@ -1200,7 +1242,7 @@
       "id": "SUP-042",
       "name": "Buchungen fehlen nach Stromausfall",
       "kategorie": "Zeiterfassungsterminals, Chips und Ausweise",
-      "bezeichnung": "Für die Zeit eines Stromausfalls gibt es keine Buchungen.",
+      "bezeichnung": "Terminal war während Stromausfall aus, keine Buchungen in dem Zeitraum.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Nach Stromausfall",
@@ -1211,10 +1253,11 @@
         "stufe4": "Lücke zur Zeit des Stromausfalls",
         "frage": "Warum fehlen Buchungen nach einem Stromausfall?",
         "stichworte": "stromausfall buchungen fehlen terminal",
-        "ursache": "Während des Ausfalls war das Terminal aus und konnte nicht stempeln.",
-        "pruefen": "Zeitraum der Lücke notieren\nEreignisprotokoll des Terminals abrufen",
-        "loesung": "Zeitraum ermitteln\nFehlende Zeiten als Korrektur mit Grund „Stromausfall“ eintragen",
-        "hinweis": "Fehlende Zeiten per Korrektur eintragen, Grund „Stromausfall“."
+        "loesung": "Zeitraum der Lücke ermitteln (Ereignisprotokoll des Terminals)\nFehlende Zeiten als Korrektur, Grund „Stromausfall“",
+        "rueckfragen": "Wann genau war der Stromausfall?\nWer war in der Zeit anwesend?",
+        "textbaustein": "Während des Stromausfalls war das Terminal aus und konnte keine Buchungen annehmen. Tragen Sie die fehlenden Zeiten bitte als Korrektur mit dem Grund „Stromausfall“ nach.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Buchungen vor dem Ausfall bleiben im Speicher. Was während des Ausfalls nicht gestempelt wurde, existiert nicht und muss korrigiert werden."
       },
       "erstellt": "2026-07-13T09:00:00Z"
     },
@@ -1222,7 +1265,7 @@
       "id": "SUP-043",
       "name": "Gestempelte Zeiten aus der App fehlen",
       "kategorie": "Online-Zeiterfassung im Browser und in der App",
-      "bezeichnung": "Ohne Netz gespeicherte Stempelungen bleiben auf dem Handy, bis die App wieder online geöffnet wird.",
+      "bezeichnung": "Offline-Stempelungen noch auf dem Handy, nicht synchronisiert.",
       "zusatz": {
         "produkt": "Fakturo Zeit",
         "wann": "Nach dem Stempeln",
@@ -1234,10 +1277,11 @@
         "stufe4": "App zeigt nicht synchronisierte Buchungen",
         "frage": "Warum fehlen meine Zeiten aus der App?",
         "stichworte": "app stempeln offline zeiten fehlen synchronisieren",
-        "ursache": "Die App war offline und wurde seitdem nicht online geöffnet.",
-        "pruefen": "App öffnen und Wolkensymbol prüfen\nMobile Daten für die App erlaubt?",
-        "loesung": "App mit Internetverbindung öffnen\nOben auf „Synchronisieren“ tippen\nZeiten im Browser unter „Meine Zeiten“ prüfen",
-        "hinweis": "App nicht neu installieren, bevor synchronisiert wurde. Sonst sind die Zeiten weg."
+        "loesung": "App online öffnen, Wolkensymbol prüfen\n„Synchronisieren“\nBrowser › „Meine Zeiten“ prüfen\nNicht neu installieren vor Sync",
+        "rueckfragen": "Zeigt die App oben ein Wolkensymbol mit Zahl?\nIst mobile Datennutzung für die App erlaubt?",
+        "textbaustein": "Die Stempelungen wurden ohne Netz auf dem Handy gespeichert und noch nicht übertragen. Öffnen Sie bitte die App mit Internetverbindung und tippen Sie oben auf „Synchronisieren“. Wichtig: Die App vorher nicht neu installieren, sonst gehen die Zeiten verloren.",
+        "eskalation": "2nd Level, wenn die Synchronisation mit Fehler abbricht.",
+        "begruendung": "Fakturo Zeit speichert offline lokal und überträgt beim nächsten Online-Start. Eine Neuinstallation löscht den lokalen Speicher."
       },
       "erstellt": "2026-07-09T08:00:00Z"
     },
@@ -1245,7 +1289,7 @@
       "id": "SUP-044",
       "name": "Standort wird beim Stempeln nicht erfasst",
       "kategorie": "Online-Zeiterfassung im Browser und in der App",
-      "bezeichnung": "Die App hat keine Berechtigung für den Standort oder sie wurde nur „beim ersten Mal“ erteilt.",
+      "bezeichnung": "Standortberechtigung fehlt oder nur „einmal“ erteilt.",
       "zusatz": {
         "produkt": "Fakturo Zeit",
         "wann": "Beim Stempeln",
@@ -1257,10 +1301,11 @@
         "stufe4": "Standortberechtigung nicht auf „Beim Verwenden“",
         "frage": "Warum wird beim Stempeln kein Standort gespeichert?",
         "stichworte": "gps standort ort fehlt berechtigung",
-        "ursache": "Fehlende oder eingeschränkte Standortberechtigung.",
-        "pruefen": "Handy-Einstellungen › Fakturo Zeit › Standort prüfen\nGenauen Standort prüfen",
-        "loesung": "Einstellungen › Fakturo Zeit › Standort öffnen\n„Beim Verwenden der App“ wählen\nGenauen Standort einschalten",
-        "hinweis": "Standorterfassung braucht eine Betriebsvereinbarung. Das klärt der Kunde."
+        "loesung": "Handy › Einstellungen › Fakturo Zeit › Standort: „Beim Verwenden der App“\nGenauen Standort an",
+        "rueckfragen": "Welches Handy bzw. Betriebssystem nutzt die Person?",
+        "textbaustein": "Die App hat keine dauerhafte Berechtigung für den Standort. Bitte in den Handy-Einstellungen unter Fakturo Zeit › Standort „Beim Verwenden der App“ wählen und „Genauer Standort“ einschalten.",
+        "eskalation": "Keine Eskalation. Betriebsvereinbarung zur Standorterfassung klärt der Kunde.",
+        "begruendung": "iOS und Android vergeben Standortrechte pro App. „Nur einmal“ gilt nur bis zum Schließen der App."
       },
       "erstellt": "2026-07-05T07:00:00Z"
     },
@@ -1268,7 +1313,7 @@
       "id": "SUP-045",
       "name": "Vergessene Stempelung nachtragen",
       "kategorie": "Online-Zeiterfassung im Browser und in der App",
-      "bezeichnung": "Mitarbeitende können Zeiten nicht direkt ändern, aber einen Korrekturantrag stellen. Die Leitung gibt ihn frei.",
+      "bezeichnung": "Mitarbeitende dürfen nur Korrekturanträge stellen, keine direkte Änderung.",
       "zusatz": {
         "produkt": "Fakturo Zeit",
         "wann": "Nach dem Stempeln",
@@ -1279,10 +1324,11 @@
         "stufe4": "Kein Bearbeiten-Symbol am Tag",
         "frage": "Wie trage ich eine vergessene Stempelung nach?",
         "stichworte": "stempelung nachtragen vergessen korrektur antrag",
-        "ursache": "Mitarbeitende dürfen nur Anträge stellen.",
-        "pruefen": "Rolle der Person prüfen\nPrüfen, ob der Monat abgeschlossen ist",
-        "loesung": "„Meine Zeiten“ öffnen und den Tag wählen\n„Korrektur beantragen“ und Uhrzeit mit Grund eintragen\nVorgesetzte Person gibt den Antrag frei",
-        "hinweis": "Abgeschlossene Monate kann nur die Verwaltung öffnen."
+        "loesung": "„Meine Zeiten“ › Tag › „Korrektur beantragen“ mit Uhrzeit + Grund\nVorgesetzte Person gibt frei\nMonat abgeschlossen: nur Verwaltung",
+        "rueckfragen": "Ist der Monat schon abgeschlossen?",
+        "textbaustein": "Mitarbeitende können Zeiten nicht direkt ändern, aber eine Korrektur beantragen. Dazu unter „Meine Zeiten“ den Tag wählen, „Korrektur beantragen“ antippen und Uhrzeit sowie Grund eintragen. Die vorgesetzte Person gibt den Antrag dann frei.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Das Antragsverfahren sorgt dafür, dass Korrekturen nachvollziehbar und freigegeben sind (Arbeitszeitdokumentation)."
       },
       "erstellt": "2026-07-06T06:00:00Z"
     },
@@ -1290,7 +1336,7 @@
       "id": "SUP-046",
       "name": "Online-Zeiten kommen nicht in Fakturo an",
       "kategorie": "Online-Zeiterfassung im Browser und in der App",
-      "bezeichnung": "Die Personalnummer in Fakturo Zeit passt nicht zur Personalnummer in Fakturo, deshalb werden die Zeiten nicht zugeordnet.",
+      "bezeichnung": "S-409. Personalnummer in Fakturo Zeit ≠ Fakturo, Abgleich kann nicht zuordnen.",
       "zusatz": {
         "produkt": "Fakturo Zeit",
         "wann": "Beim Abgleich",
@@ -1302,10 +1348,11 @@
         "stufe4": "Fehlerliste meldet S-409",
         "frage": "Warum erscheinen Online-Zeiten nicht in der Rechnungssoftware?",
         "stichworte": "schnittstelle abgleich personalnummer zeiten übertragen fakturo",
-        "ursache": "Personalnummern in beiden Programmen stimmen nicht überein.",
-        "pruefen": "Fehlerliste des Abgleichs öffnen\nPersonalnummer in beiden Programmen vergleichen",
-        "loesung": "In Fakturo Zeit Verwaltung › Abgleich › Fehlerliste öffnen\nPersonalnummer angleichen\n„Erneut übertragen“ wählen",
-        "hinweis": "Personalnummer führend in Fakturo pflegen."
+        "loesung": "Fakturo Zeit › Verwaltung › Abgleich › Fehlerliste\nPersNr angleichen (Fakturo ist führend)\n„Erneut übertragen“",
+        "rueckfragen": "Welche Personen stehen in der Fehlerliste des Abgleichs?",
+        "textbaustein": "Die Zeiten konnten nicht übertragen werden, weil die Personalnummer in Fakturo Zeit nicht mit der in Fakturo übereinstimmt. Gleichen Sie die Nummer bitte an (Fakturo ist führend) und wählen Sie im Abgleich „Erneut übertragen“.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Der Abgleich ordnet Personen ausschließlich über die Personalnummer zu. Abweichende Nummern landen in der Fehlerliste statt bei falschen Personen."
       },
       "erstellt": "2026-07-02T05:00:00Z"
     },
@@ -1313,7 +1360,7 @@
       "id": "SUP-047",
       "name": "Einladungslink ist abgelaufen",
       "kategorie": "Online-Zeiterfassung im Browser und in der App",
-      "bezeichnung": "Einladungen zu Fakturo Zeit sind 7 Tage gültig.",
+      "bezeichnung": "Einladungslink älter als 7 Tage.",
       "zusatz": {
         "produkt": "Fakturo Zeit",
         "wann": "Beim Anmelden",
@@ -1324,10 +1371,11 @@
         "stufe4": "Link ist älter als 7 Tage",
         "frage": "Was tun, wenn der Einladungslink nicht mehr geht?",
         "stichworte": "einladung link abgelaufen registrieren",
-        "ursache": "Einladungen sind 7 Tage gültig.",
-        "pruefen": "Datum der Einladung prüfen\nE-Mail-Adresse auf Tippfehler prüfen",
-        "loesung": "Verwaltung › Personen öffnen\n„Einladung erneut senden“ wählen\nLink innerhalb von 7 Tagen öffnen",
-        "hinweis": "Einladungen landen oft im Spam-Ordner."
+        "loesung": "Verwaltung › Personen › „Einladung erneut senden“\nE-Mail-Adresse auf Tippfehler prüfen\nSpam-Ordner",
+        "rueckfragen": "Stimmt die hinterlegte E-Mail-Adresse?",
+        "textbaustein": "Einladungen zu Fakturo Zeit sind 7 Tage gültig. Senden Sie die Einladung bitte unter Verwaltung › Personen erneut. Falls sie nicht ankommt, bitte auch den Spam-Ordner prüfen.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Die Gültigkeit ist aus Sicherheitsgründen begrenzt, weil der Link ohne Passwort zum Konto führt."
       },
       "erstellt": "2026-06-28T04:00:00Z"
     },
@@ -1335,7 +1383,7 @@
       "id": "SUP-048",
       "name": "Stempeln nicht möglich, Knopf ist grau",
       "kategorie": "Online-Zeiterfassung im Browser und in der App",
-      "bezeichnung": "In der App ist der Stempelknopf grau, weil die Person außerhalb ihres erlaubten Bereichs steht.",
+      "bezeichnung": "Geofence aktiv, Person außerhalb des Stempelbereichs.",
       "zusatz": {
         "produkt": "Fakturo Zeit",
         "wann": "Beim Stempeln",
@@ -1347,10 +1395,11 @@
         "stufe4": "Außerhalb des erlaubten Standorts (Geofence)",
         "frage": "Warum kann ich in der App nicht stempeln?",
         "stichworte": "stempeln grau knopf geofence bereich",
-        "ursache": "Für die Person ist ein Stempelbereich (Geofence) eingerichtet.",
-        "pruefen": "Verwaltung › Person › Stempelbereiche ansehen\nStandort der Person auf der Karte prüfen",
-        "loesung": "Standort in der App prüfen\nVerwaltung › Person › Stempelbereiche anpassen\nApp neu öffnen",
-        "hinweis": "Radius nicht unter 150 m einstellen, GPS ist in Gebäuden ungenau."
+        "loesung": "Standort in der App prüfen\nVerwaltung › Person › Stempelbereiche anpassen (Radius ≥ 150 m)\nApp neu öffnen",
+        "rueckfragen": "Wo befindet sich die Person beim Stempeln?",
+        "textbaustein": "Für die Person ist ein Stempelbereich eingerichtet, und sie befindet sich außerhalb davon. Prüfen Sie bitte unter Verwaltung › Person › Stempelbereiche den Bereich und vergrößern Sie ihn bei Bedarf. Danach die App neu öffnen.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "GPS ist in Gebäuden ungenau. Radien unter 150 m führen zu grauen Knöpfen, obwohl die Person vor Ort ist."
       },
       "erstellt": "2026-06-24T03:00:00Z"
     },
@@ -1358,7 +1407,7 @@
       "id": "SUP-049",
       "name": "Korrekturantrag bleibt offen",
       "kategorie": "Online-Zeiterfassung im Browser und in der App",
-      "bezeichnung": "Ein Korrekturantrag wird nicht freigegeben, weil niemand ihn sieht.",
+      "bezeichnung": "Keine vorgesetzte Person hinterlegt, Antrag landet bei niemandem.",
       "zusatz": {
         "produkt": "Fakturo Zeit",
         "wann": "Nach dem Stempeln",
@@ -1369,10 +1418,11 @@
         "stufe4": "Keine vorgesetzte Person hinterlegt",
         "frage": "Warum wird mein Korrekturantrag nicht bearbeitet?",
         "stichworte": "korrekturantrag offen freigabe vorgesetzter",
-        "ursache": "Ohne vorgesetzte Person landet der Antrag bei niemandem.",
-        "pruefen": "Verwaltung › Person › Vorgesetzte ansehen\nOffene Anträge unter Verwaltung › Anträge prüfen",
-        "loesung": "Verwaltung › Person › Vorgesetzte eintragen\nAntrag unter Verwaltung › Anträge freigeben",
-        "hinweis": "Vertretung einrichten, wenn die vorgesetzte Person im Urlaub ist."
+        "loesung": "Verwaltung › Person › Vorgesetzte eintragen\nVerwaltung › Anträge: offenen Antrag freigeben\nVertretung einrichten",
+        "rueckfragen": "Wer soll die Anträge dieser Person freigeben?",
+        "textbaustein": "Für die Person ist keine vorgesetzte Person hinterlegt, deshalb sieht niemand den Antrag. Tragen Sie bitte unter Verwaltung › Person eine vorgesetzte Person ein und geben Sie den offenen Antrag unter Verwaltung › Anträge frei.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Anträge werden nur der hinterlegten vorgesetzten Person bzw. deren Vertretung angezeigt."
       },
       "erstellt": "2026-06-20T09:00:00Z"
     },
@@ -1380,7 +1430,7 @@
       "id": "SUP-050",
       "name": "Kontrollpunkt lässt sich nicht scannen",
       "kategorie": "Wächterkontrolle: Rundgänge, Kontrollpunkte und Alarme",
-      "bezeichnung": "Das NFC-Tag wird nicht gelesen. Häufig ist NFC am Handy aus, eine dicke Hülle stört oder das Tag ist beschädigt.",
+      "bezeichnung": "NFC aus, Hülle stört oder Tag defekt.",
       "zusatz": {
         "produkt": "Fakturo Rundgang",
         "wann": "Beim Rundgang",
@@ -1392,10 +1442,11 @@
         "stufe4": "Handy liest gar kein Tag oder nur dieses nicht",
         "frage": "Warum kann ich einen Kontrollpunkt nicht scannen?",
         "stichworte": "kontrollpunkt scannen nfc tag lesen checkpoint",
-        "ursache": "NFC aus, Hülle stört oder Tag beschädigt.",
-        "pruefen": "Prüfen, ob andere Tags gelesen werden\nNFC-Einstellung am Handy prüfen\nTag auf Beschädigung ansehen lassen",
-        "loesung": "NFC in den Handy-Einstellungen einschalten\nHandy mit der Rückseite mittig an das Tag halten, Hülle abnehmen\nGeht es nicht: Punkt in der App als „nicht lesbar“ melden, mit Foto",
-        "hinweis": "Liest das Handy kein Tag: Handyproblem. Nur dieses Tag: Tag ersetzen."
+        "loesung": "Andere Tags lesbar? Nein: Handy (NFC an, Hülle ab). Ja: Tag defekt\nRückseite mittig ans Tag\nPunkt in der App als „nicht lesbar“ melden, mit Foto\nTag ersetzen",
+        "rueckfragen": "Werden andere Kontrollpunkte gelesen?\nWelches Handy wird verwendet?",
+        "textbaustein": "Bitte prüfen Sie, ob NFC am Handy eingeschaltet ist, nehmen Sie die Hülle ab und halten Sie die Rückseite mittig an das Tag. Funktioniert nur dieses eine Tag nicht, melden Sie den Punkt in der App als „nicht lesbar“ mit Foto. Das Tag wird dann ersetzt.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Liest das Handy gar kein Tag, liegt es am Handy. Nur ein Tag: Tag beschädigt oder auf Metall montiert."
       },
       "erstellt": "2026-06-21T08:00:00Z"
     },
@@ -1403,7 +1454,7 @@
       "id": "SUP-051",
       "name": "Rundgang als verspätet markiert",
       "kategorie": "Wächterkontrolle: Rundgänge, Kontrollpunkte und Alarme",
-      "bezeichnung": "Das Zeitfenster des Rundgangs hat eine Toleranz von 10 Minuten. Liegt die Handyuhr daneben oder startet der Rundgang zu spät, gilt er als verspätet.",
+      "bezeichnung": "Start außerhalb Zeitfenster (Toleranz 10 Min.) oder Handyuhr weicht ab.",
       "zusatz": {
         "produkt": "Fakturo Rundgang",
         "wann": "Beim Rundgang",
@@ -1415,10 +1466,11 @@
         "stufe4": "Handyuhr weicht ab oder Start nach Toleranz",
         "frage": "Warum steht mein Rundgang auf verspätet?",
         "stichworte": "rundgang verspätet zeitfenster toleranz zu spät",
-        "ursache": "Startzeit außerhalb des Zeitfensters.",
-        "pruefen": "Scanzeiten im Bericht ansehen\nUhrzeit-Einstellung am Handy prüfen\nToleranz im Plan prüfen",
-        "loesung": "Uhrzeit am Handy auf automatisch stellen\nIn der Leitstelle Rundgangsplan › Toleranz prüfen\nRundgang innerhalb des Zeitfensters starten",
-        "hinweis": "Toleranzen sind oft im Vertrag mit dem Auftraggeber festgelegt."
+        "loesung": "Bericht: Scanzeiten prüfen\nHandy: Uhrzeit automatisch\nLeitstelle › Rundgangsplan › Toleranz prüfen",
+        "rueckfragen": "Zu welcher Uhrzeit wurde der Rundgang gestartet?\nIst die Uhrzeit am Handy auf automatisch?",
+        "textbaustein": "Der Rundgang gilt als verspätet, wenn er außerhalb des Zeitfensters (Standard 10 Minuten Toleranz) startet oder die Handyuhr abweicht. Stellen Sie die Uhrzeit am Handy bitte auf automatisch und prüfen Sie in der Leitstelle die Toleranz im Rundgangsplan.",
+        "eskalation": "Keine Eskalation. Toleranzen sind oft im Vertrag mit dem Auftraggeber festgelegt.",
+        "begruendung": "Die App stempelt mit der Handyzeit. Eine manuell gestellte Uhr verschiebt alle Scans."
       },
       "erstellt": "2026-06-17T07:00:00Z"
     },
@@ -1426,7 +1478,7 @@
       "id": "SUP-052",
       "name": "Geplanter Rundgang fehlt in der App",
       "kategorie": "Wächterkontrolle: Rundgänge, Kontrollpunkte und Alarme",
-      "bezeichnung": "Der Rundgang ist nicht dem Objekt oder der Schicht der Person zugewiesen.",
+      "bezeichnung": "Rundgangsplan nicht dem Objekt/der Schicht zugewiesen.",
       "zusatz": {
         "produkt": "Fakturo Rundgang",
         "wann": "Bei Schichtbeginn",
@@ -1438,10 +1490,11 @@
         "stufe4": "Plan ist der Schicht nicht zugewiesen",
         "frage": "Warum sehe ich meinen Rundgang nicht in der App?",
         "stichworte": "rundgang fehlt app nicht sichtbar plan zuweisen",
-        "ursache": "Plan nicht dem Objekt oder der Schicht zugewiesen.",
-        "pruefen": "Leitstelle › Rundgangspläne ansehen\nSchicht der Person im Dienstplan prüfen",
-        "loesung": "Leitstelle › Rundgangspläne öffnen\nObjekt und Schicht zuweisen\nIn der App nach unten ziehen zum Aktualisieren",
-        "hinweis": "Nach Zuweisung in der App aktualisieren."
+        "loesung": "Leitstelle › Rundgangspläne: Objekt + Schicht zuweisen\nDienstplan der Person prüfen\nApp nach unten ziehen zum Aktualisieren",
+        "rueckfragen": "Welches Objekt und welche Schicht?",
+        "textbaustein": "Der Rundgang ist dem Objekt oder der Schicht der Person nicht zugewiesen. Bitte unter Leitstelle › Rundgangspläne Objekt und Schicht zuweisen und danach in der App zum Aktualisieren nach unten ziehen.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Die App zeigt nur Pläne, die zur aktuellen Schicht und zum Objekt der Person passen."
       },
       "erstellt": "2026-06-13T06:00:00Z"
     },
@@ -1449,7 +1502,7 @@
       "id": "SUP-053",
       "name": "Kein Alarm bei ausgelassenem Kontrollpunkt",
       "kategorie": "Wächterkontrolle: Rundgänge, Kontrollpunkte und Alarme",
-      "bezeichnung": "Für den Rundgang ist keine Benachrichtigung eingerichtet. Ausgelassene Punkte stehen dann nur im Bericht.",
+      "bezeichnung": "Keine Benachrichtigung „Kontrollpunkt verpasst“ im Plan eingerichtet.",
       "zusatz": {
         "produkt": "Fakturo Rundgang",
         "wann": "Beim Rundgang",
@@ -1460,10 +1513,11 @@
         "stufe4": "Benachrichtigung im Plan aus",
         "frage": "Warum bekomme ich keine Meldung, wenn ein Kontrollpunkt fehlt?",
         "stichworte": "alarm benachrichtigung ausgelassen kontrollpunkt eskalation leitstelle",
-        "ursache": "Keine Benachrichtigung eingerichtet.",
-        "pruefen": "Plan › Benachrichtigungen öffnen\nEmpfänger und Kanal prüfen",
-        "loesung": "Leitstelle › Rundgangsplan › Benachrichtigungen öffnen\n„Kontrollpunkt verpasst“ aktivieren\nEmpfänger (E-Mail, SMS oder Leitstelle) eintragen",
-        "hinweis": "Sicherheitsrelevant. Bei Unklarheit sofort an den 2nd Level."
+        "loesung": "Leitstelle › Rundgangsplan › Benachrichtigungen: „Kontrollpunkt verpasst“ an\nEmpfänger + Kanal (E-Mail, SMS, Leitstelle)",
+        "rueckfragen": "Wer soll bei einem verpassten Punkt alarmiert werden und wie?",
+        "textbaustein": "Für den Rundgang ist keine Benachrichtigung eingerichtet, deshalb stehen ausgelassene Punkte nur im Bericht. Aktivieren Sie bitte unter Leitstelle › Rundgangsplan › Benachrichtigungen „Kontrollpunkt verpasst“ und tragen Sie die Empfänger ein.",
+        "eskalation": "Sicherheitsrelevant: bei Unklarheit sofort 2nd Level.",
+        "begruendung": "Benachrichtigungen sind pro Plan konfigurierbar und standardmäßig aus, weil Empfänger und Kanal je Objekt verschieden sind."
       },
       "erstellt": "2026-06-09T05:00:00Z"
     },
@@ -1471,7 +1525,7 @@
       "id": "SUP-054",
       "name": "Totmann-Alarm löst ständig aus",
       "kategorie": "Wächterkontrolle: Rundgänge, Kontrollpunkte und Alarme",
-      "bezeichnung": "Der Alleinarbeiter-Schutz meldet Alarm, wenn sich das Handy eine Zeit lang nicht bewegt. Im Fahrzeug oder beim Sitzen ist die Einstellung oft zu streng.",
+      "bezeichnung": "Ruhezeit des Alleinarbeiterschutzes zu kurz, Fehlalarme bei Ruhe.",
       "zusatz": {
         "produkt": "Fakturo Rundgang",
         "wann": "Beim Rundgang",
@@ -1483,10 +1537,11 @@
         "stufe4": "Totmann-Alarm bei Ruhe im Fahrzeug oder beim Sitzen",
         "frage": "Warum löst der Totmann-Alarm so oft aus?",
         "stichworte": "totmann alarm alleinarbeiter bewegung lage fehlalarm",
-        "ursache": "Ruhezeit zu kurz eingestellt.",
-        "pruefen": "Alarmprotokoll der letzten Schicht ansehen\nSituation bei den Alarmen erfragen",
-        "loesung": "Leitstelle › Objekt › Alleinarbeiterschutz öffnen\nRuhezeit bis zum Voralarm verlängern, z. B. auf 5 Minuten\nVoralarm auf dem Handy bestätigen lassen statt sofort zu melden",
-        "hinweis": "Den Schutz nie ganz ausschalten, nur anpassen."
+        "loesung": "Alarmprotokoll prüfen\nLeitstelle › Objekt › Alleinarbeiterschutz: Ruhezeit bis Voralarm z. B. 5 Min.\nVoralarm am Handy bestätigen lassen\nNie ganz abschalten",
+        "rueckfragen": "In welchen Situationen kommen die Alarme (Fahrzeug, Pförtnerloge)?",
+        "textbaustein": "Der Alleinarbeiterschutz meldet Alarm, wenn sich das Handy eine Zeit lang nicht bewegt. Verlängern Sie bitte unter Leitstelle › Objekt › Alleinarbeiterschutz die Ruhezeit bis zum Voralarm, zum Beispiel auf 5 Minuten. Bitte den Schutz nicht ganz ausschalten.",
+        "eskalation": "2nd Level, wenn Alarme auch bei Bewegung kommen (Sensorproblem).",
+        "begruendung": "Der Voralarm gibt der Person Gelegenheit zu bestätigen. Erst ohne Bestätigung wird an die Leitstelle gemeldet."
       },
       "erstellt": "2026-06-05T04:00:00Z"
     },
@@ -1494,7 +1549,7 @@
       "id": "SUP-055",
       "name": "Neuen Kontrollpunkt anlegen",
       "kategorie": "Wächterkontrolle: Rundgänge, Kontrollpunkte und Alarme",
-      "bezeichnung": "Neue NFC-Tags oder QR-Codes müssen einmal in der App angelernt und einem Objekt zugeordnet werden.",
+      "bezeichnung": "Neuer Kontrollpunkt: Tag muss einmal angelernt und zugeordnet werden.",
       "zusatz": {
         "produkt": "Fakturo Rundgang",
         "wann": "Beim Einrichten",
@@ -1506,10 +1561,11 @@
         "stufe4": "Tag ist noch nicht angelernt",
         "frage": "Wie lege ich einen neuen Kontrollpunkt an?",
         "stichworte": "kontrollpunkt anlegen neu tag qr anlernen",
-        "ursache": "Neue Tags kennt das System erst nach dem Anlernen.",
-        "pruefen": "Recht „Kontrollpunkte anlernen“ prüfen\nTag-Typ prüfen (NFC, QR, Barcode)",
-        "loesung": "In der App als Objektleitung „Kontrollpunkte anlernen“ wählen\nTag scannen und Namen vergeben, z. B. „Tor Nord“\nIn der Leitstelle den Punkt in den Rundgangsplan aufnehmen",
-        "hinweis": "Tags gut sichtbar, aber nicht leicht entfernbar anbringen."
+        "loesung": "Recht „Kontrollpunkte anlernen“ prüfen\nApp (Objektleitung) › „Kontrollpunkte anlernen“ › scannen + benennen\nLeitstelle: Punkt in Rundgangsplan aufnehmen",
+        "rueckfragen": "Welcher Tag-Typ wird verwendet (NFC, QR, Barcode)?",
+        "textbaustein": "Neue Kontrollpunkte müssen einmal angelernt werden. Wählen Sie bitte in der App als Objektleitung „Kontrollpunkte anlernen“, scannen Sie das Tag und vergeben Sie einen Namen. Danach nehmen Sie den Punkt in der Leitstelle in den Rundgangsplan auf.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Tags haben eine eindeutige Kennung, die das System erst nach dem Anlernen einem Ort zuordnen kann."
       },
       "erstellt": "2026-06-06T03:00:00Z"
     },
@@ -1517,7 +1573,7 @@
       "id": "SUP-056",
       "name": "Scan kommt nicht in der Leitstelle an",
       "kategorie": "Wächterkontrolle: Rundgänge, Kontrollpunkte und Alarme",
-      "bezeichnung": "Die Wachperson hat gescannt, aber in der Leitstelle fehlt der Punkt.",
+      "bezeichnung": "Kein Netz am Objekt, Scans in der Warteschlange der App.",
       "zusatz": {
         "produkt": "Fakturo Rundgang",
         "wann": "Beim Rundgang",
@@ -1529,10 +1585,11 @@
         "stufe4": "App zeigt Scans in der Warteschlange",
         "frage": "Warum sieht die Leitstelle meine Scans nicht?",
         "stichworte": "scan leitstelle fehlt netz warteschlange",
-        "ursache": "Kein Netz am Objekt. Scans werden gespeichert und später gesendet.",
-        "pruefen": "Warteschlange in der App ansehen\nMobilfunkempfang am Objekt erfragen",
-        "loesung": "In der App die Warteschlange öffnen\nOrt mit Empfang aufsuchen\n„Jetzt senden“ tippen",
-        "hinweis": "Für Objekte ohne Netz: WLAN-Punkt oder Offline-Modus mit Abgleich bei Schichtende."
+        "loesung": "App › Warteschlange\nOrt mit Empfang\n„Jetzt senden“\nDauerhaft: WLAN-Punkt oder Offline-Modus mit Abgleich bei Schichtende",
+        "rueckfragen": "Gibt es am Objekt Mobilfunkempfang?",
+        "textbaustein": "Die Scans sind in der App gespeichert, konnten aber mangels Netz noch nicht gesendet werden. Bitte in der App die Warteschlange öffnen und an einem Ort mit Empfang „Jetzt senden“ tippen.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Scans werden mit Originalzeit gespeichert und später übertragen. Die Leitstelle sieht sie erst nach dem Senden."
       },
       "erstellt": "2026-06-02T09:00:00Z"
     },
@@ -1540,7 +1597,7 @@
       "id": "SUP-057",
       "name": "Rundgang wird zur falschen Zeit erzeugt",
       "kategorie": "Wächterkontrolle: Rundgänge, Kontrollpunkte und Alarme",
-      "bezeichnung": "Am Wochenende oder Feiertag erscheinen Rundgänge nach Werktagsplan.",
+      "bezeichnung": "Kein Wochenend-/Feiertagsplan, Werktagsplan greift.",
       "zusatz": {
         "produkt": "Fakturo Rundgang",
         "wann": "Am Wochenende",
@@ -1551,10 +1608,11 @@
         "stufe4": "Feiertags- oder Wochenendplan fehlt",
         "frage": "Warum kommen am Wochenende die falschen Rundgänge?",
         "stichworte": "rundgang wochenende feiertag falsche zeit plan",
-        "ursache": "Am Wochenende oder Feiertag gilt der Werktagsplan.",
-        "pruefen": "Datum und Wochentag des Rundgangs prüfen\nPlan › Gültigkeit ansehen",
-        "loesung": "Leitstelle › Rundgangspläne öffnen\nWochenend- und Feiertagsplan anlegen\nGültigkeit der Pläne prüfen",
-        "hinweis": "Feiertagskalender des Objekt-Bundeslands verwenden."
+        "loesung": "Leitstelle › Rundgangspläne: Wochenend- und Feiertagsplan anlegen\nGültigkeit prüfen\nFeiertagskalender des Objekt-Bundeslands",
+        "rueckfragen": "Welche Zeiten gelten am Wochenende und an Feiertagen?",
+        "textbaustein": "Für Wochenende und Feiertage ist kein eigener Plan hinterlegt, deshalb gilt der Werktagsplan. Legen Sie bitte unter Leitstelle › Rundgangspläne einen Wochenend- und Feiertagsplan an.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Pläne haben Gültigkeiten nach Wochentag. Feiertage richten sich nach dem Bundesland des Objekts."
       },
       "erstellt": "2026-05-29T08:00:00Z"
     },
@@ -1562,7 +1620,7 @@
       "id": "SUP-058",
       "name": "Wachbuch-Eintrag lässt sich nicht ändern",
       "kategorie": "Digitales Wachbuch: Einträge, Schichtübergabe und Berichte",
-      "bezeichnung": "Wachbuch-Einträge sind revisionssicher. Nach dem Speichern sind nur Nachträge möglich, die Originalfassung bleibt sichtbar.",
+      "bezeichnung": "Wachbuch revisionssicher, nach Speichern nur Nachtrag.",
       "zusatz": {
         "produkt": "Fakturo Wachbuch",
         "wann": "Nach dem Speichern",
@@ -1573,10 +1631,11 @@
         "stufe4": "Nur „Nachtrag“ wird angeboten",
         "frage": "Warum kann ich einen Wachbuch-Eintrag nicht bearbeiten?",
         "stichworte": "wachbuch eintrag ändern bearbeiten nachtrag revisionssicher",
-        "ursache": "Revisionssichere Speicherung.",
-        "pruefen": "Zeitpunkt des Speicherns prüfen\nPrüfen, ob die Person der Ersteller ist",
-        "loesung": "Eintrag öffnen\n„Nachtrag hinzufügen“ wählen\nKorrektur beschreiben und speichern",
-        "hinweis": "Einträge sind Beweismittel. Keine Löschung über den Support."
+        "loesung": "Eintrag › „Nachtrag hinzufügen“\nKorrektur beschreiben + speichern\nKeine Löschung über den Support",
+        "rueckfragen": "Was genau soll korrigiert werden?",
+        "textbaustein": "Wachbuch-Einträge sind revisionssicher und können nach dem Speichern nicht mehr geändert werden. Bitte öffnen Sie den Eintrag, wählen Sie „Nachtrag hinzufügen“ und beschreiben Sie die Korrektur. Die Originalfassung bleibt sichtbar.",
+        "eskalation": "Keine Eskalation. Löschwünsche ablehnen.",
+        "begruendung": "Einträge können Beweismittel sein. Änderungen sind nur als nachvollziehbarer Nachtrag zulässig."
       },
       "erstellt": "2026-05-25T07:00:00Z"
     },
@@ -1584,7 +1643,7 @@
       "id": "SUP-059",
       "name": "Fotos werden nicht hochgeladen",
       "kategorie": "Digitales Wachbuch: Einträge, Schichtübergabe und Berichte",
-      "bezeichnung": "Bilder werden erst bei WLAN oder guter Mobilverbindung übertragen. Bis dahin zeigt der Eintrag ein Uhrsymbol.",
+      "bezeichnung": "Foto-Upload wartet auf WLAN (Uhrsymbol am Eintrag).",
       "zusatz": {
         "produkt": "Fakturo Wachbuch",
         "wann": "Beim Speichern",
@@ -1596,10 +1655,11 @@
         "stufe4": "Uhrsymbol am Eintrag",
         "frage": "Warum fehlen die Fotos im Wachbuch?",
         "stichworte": "foto bild hochladen fehlt anhang",
-        "ursache": "Upload wartet auf WLAN.",
-        "pruefen": "Uhrsymbol am Eintrag prüfen\nEinstellung „Fotos über Mobilfunk“ prüfen\nBildgröße prüfen",
-        "loesung": "App geöffnet lassen, bis das Uhrsymbol verschwindet\nEinstellungen › „Fotos auch über Mobilfunk senden“ einschalten\nBilder über 20 MB vorher verkleinern",
-        "hinweis": "Fotos von Personen nur nach Datenschutzregeln des Objekts."
+        "loesung": "App offen lassen bis Uhrsymbol weg\nEinstellungen › „Fotos auch über Mobilfunk senden“\nBilder > 20 MB verkleinern",
+        "rueckfragen": "Zeigt der Eintrag ein Uhrsymbol?",
+        "textbaustein": "Fotos werden standardmäßig erst über WLAN übertragen. Lassen Sie die App bitte geöffnet, bis das Uhrsymbol verschwindet, oder aktivieren Sie in den Einstellungen „Fotos auch über Mobilfunk senden“.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Der Standard schont das Datenvolumen. Der Eintrag selbst ist bereits gespeichert, nur die Bilder fehlen noch."
       },
       "erstellt": "2026-05-21T06:00:00Z"
     },
@@ -1607,7 +1667,7 @@
       "id": "SUP-060",
       "name": "Tagesbericht geht nicht an den Auftraggeber",
       "kategorie": "Digitales Wachbuch: Einträge, Schichtübergabe und Berichte",
-      "bezeichnung": "Für das Objekt ist kein Berichtsempfänger eingetragen oder der automatische Versand ist aus.",
+      "bezeichnung": "Kein Berichtsempfänger am Objekt oder automatischer Versand aus.",
       "zusatz": {
         "produkt": "Fakturo Wachbuch",
         "wann": "Bei Schichtende",
@@ -1618,10 +1678,11 @@
         "stufe4": "Kein Berichtsempfänger am Objekt",
         "frage": "Warum bekommt der Auftraggeber keinen Tagesbericht?",
         "stichworte": "bericht tagesbericht schichtbericht auftraggeber pdf versand",
-        "ursache": "Kein Empfänger oder Versand aus.",
-        "pruefen": "Objekt › Berichte ansehen\nVersandprotokoll prüfen",
-        "loesung": "Objekte › Objekt › Berichte öffnen\nEmpfänger-E-Mail eintragen\n„Täglich nach Schichtende senden“ aktivieren",
-        "hinweis": "Bericht manuell als PDF erzeugen und senden, bis es läuft."
+        "loesung": "Objekte › Objekt › Berichte: Empfänger eintragen\n„Täglich nach Schichtende senden“ an\nVersandprotokoll prüfen\nÜbergangsweise PDF manuell senden",
+        "rueckfragen": "An welche Adresse soll der Tagesbericht gehen?",
+        "textbaustein": "Für das Objekt ist kein Berichtsempfänger eingetragen bzw. der automatische Versand ist aus. Bitte unter Objekte › Objekt › Berichte die E-Mail-Adresse eintragen und „Täglich nach Schichtende senden“ aktivieren.",
+        "eskalation": "2nd Level, wenn Empfänger gesetzt ist und das Versandprotokoll Fehler zeigt.",
+        "begruendung": "Der Versand ist pro Objekt konfiguriert, damit jeder Auftraggeber nur seine Berichte bekommt."
       },
       "erstellt": "2026-05-22T05:00:00Z"
     },
@@ -1629,7 +1690,7 @@
       "id": "SUP-061",
       "name": "Eintrag ist beim falschen Objekt",
       "kategorie": "Digitales Wachbuch: Einträge, Schichtübergabe und Berichte",
-      "bezeichnung": "Die App verwendet das Objekt, das bei Schichtbeginn gewählt wurde. Bei Streifendienst wechselt es nicht automatisch.",
+      "bezeichnung": "Objekt bei Schichtbeginn gewählt, wechselt bei Streife nicht automatisch.",
       "zusatz": {
         "produkt": "Fakturo Wachbuch",
         "wann": "Beim Speichern",
@@ -1641,10 +1702,11 @@
         "stufe4": "Objekt bei Schichtbeginn falsch gewählt",
         "frage": "Wie verschiebe ich einen Eintrag zum richtigen Objekt?",
         "stichworte": "objekt falsch zugeordnet streife eintrag verschieben",
-        "ursache": "Objekt wechselt nicht automatisch.",
-        "pruefen": "Gewähltes Objekt oben in der App prüfen\nUhrzeit und Standort des Eintrags prüfen",
-        "loesung": "In der App vor dem nächsten Eintrag oben das Objekt wechseln\nFalschen Eintrag mit Nachtrag „Gehört zu Objekt …“ kennzeichnen\nLeitung kann ihn in der Verwaltung umhängen",
-        "hinweis": "Umhängen protokolliert das System."
+        "loesung": "App: vor nächstem Eintrag Objekt oben wechseln\nFalschen Eintrag per Nachtrag kennzeichnen\nLeitung hängt ihn in der Verwaltung um (wird protokolliert)",
+        "rueckfragen": "Welcher Eintrag gehört zu welchem Objekt?",
+        "textbaustein": "Die App verwendet das Objekt, das bei Schichtbeginn gewählt wurde. Bitte vor dem nächsten Eintrag oben in der App das Objekt wechseln. Den falschen Eintrag kann die Leitung in der Verwaltung dem richtigen Objekt zuordnen.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Kein automatischer Wechsel, damit Einträge nicht durch ungenaues GPS beim falschen Objekt landen."
       },
       "erstellt": "2026-05-18T04:00:00Z"
     },
@@ -1652,7 +1714,7 @@
       "id": "SUP-062",
       "name": "Schichtübergabe wird nicht bestätigt",
       "kategorie": "Digitales Wachbuch: Einträge, Schichtübergabe und Berichte",
-      "bezeichnung": "Die nächste Schicht muss offene Vorkommnisse lesen und bestätigen. Solange das fehlt, bleibt die Übergabe offen.",
+      "bezeichnung": "Ablösung hat offene Punkte der Übergabe nicht bestätigt.",
       "zusatz": {
         "produkt": "Fakturo Wachbuch",
         "wann": "Beim Schichtwechsel",
@@ -1664,10 +1726,11 @@
         "stufe4": "Offene Punkte sind nicht bestätigt",
         "frage": "Wie funktioniert die Schichtübergabe im Wachbuch?",
         "stichworte": "schichtübergabe schichtwechsel übergabe bestätigen kenntnis",
-        "ursache": "Nicht alle Punkte gelesen.",
-        "pruefen": "Übergabe in der Verwaltung öffnen\nUnbestätigte Punkte zählen",
-        "loesung": "Ablösung meldet sich in der App am Objekt an\n„Übergabe lesen“ öffnen und alle offenen Punkte bestätigen\nLeitung sieht die Übergabe als erledigt",
-        "hinweis": "Offene Übergaben erscheinen im Tagesbericht."
+        "loesung": "Verwaltung › Übergabe: unbestätigte Punkte\nAblösung in der App am Objekt anmelden\n„Übergabe lesen“, alle Punkte bestätigen",
+        "rueckfragen": "Wer hat die Folgeschicht übernommen?",
+        "textbaustein": "Die Übergabe bleibt offen, bis die nächste Schicht alle offenen Punkte gelesen und bestätigt hat. Die Ablösung meldet sich dazu in der App am Objekt an und bestätigt unter „Übergabe lesen“ alle Punkte.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Die Bestätigung dokumentiert, dass die Folgeschicht über offene Vorkommnisse informiert ist. Offene Übergaben erscheinen im Tagesbericht."
       },
       "erstellt": "2026-05-14T03:00:00Z"
     },
@@ -1675,7 +1738,7 @@
       "id": "SUP-063",
       "name": "Eintrag lässt sich nicht speichern",
       "kategorie": "Digitales Wachbuch: Einträge, Schichtübergabe und Berichte",
-      "bezeichnung": "Die App speichert den Eintrag nicht, weil ein Pflichtfeld der Objektvorlage leer ist.",
+      "bezeichnung": "Pflichtfeld der Objektvorlage leer.",
       "zusatz": {
         "produkt": "Fakturo Wachbuch",
         "wann": "Beim Speichern",
@@ -1687,10 +1750,11 @@
         "stufe4": "Pflichtfeld der Vorlage ist leer",
         "frage": "Warum kann ich meinen Wachbuch-Eintrag nicht speichern?",
         "stichworte": "speichern nicht möglich pflichtfeld vorlage",
-        "ursache": "Die Vorlage des Objekts hat Pflichtfelder, z. B. „Polizei verständigt“.",
-        "pruefen": "Rot markierte Felder suchen lassen\nVorlage des Objekts in der Verwaltung ansehen",
-        "loesung": "Rot markierte Felder ausfüllen\nErneut speichern",
-        "hinweis": "Pflichtfelder legt der Auftraggeber fest."
+        "loesung": "Rot markierte Felder ausfüllen\nErneut speichern\nVorlage in der Verwaltung prüfen",
+        "rueckfragen": "Welche Felder sind rot markiert?",
+        "textbaustein": "Die Vorlage für dieses Objekt enthält Pflichtfelder, die noch leer sind. Bitte die rot markierten Felder ausfüllen und erneut speichern.",
+        "eskalation": "Keine Eskalation. Pflichtfelder legt der Auftraggeber fest.",
+        "begruendung": "Pflichtfelder wie „Polizei verständigt“ stellen sicher, dass Vorkommnisse vollständig dokumentiert sind."
       },
       "erstellt": "2026-05-10T09:00:00Z"
     },
@@ -1698,7 +1762,7 @@
       "id": "SUP-064",
       "name": "Auftraggeber sieht keine Einträge im Portal",
       "kategorie": "Digitales Wachbuch: Einträge, Schichtübergabe und Berichte",
-      "bezeichnung": "Der Auftraggeber meldet sich im Kundenportal an, sieht aber kein Wachbuch.",
+      "bezeichnung": "Portalfreigabe für das Wachbuch am Objekt fehlt.",
       "zusatz": {
         "produkt": "Fakturo Wachbuch",
         "wann": "Im Kundenportal",
@@ -1709,10 +1773,11 @@
         "stufe4": "Portalfreigabe für das Objekt fehlt",
         "frage": "Warum sieht unser Auftraggeber keine Einträge?",
         "stichworte": "kundenportal auftraggeber sieht nichts freigabe",
-        "ursache": "Einträge sind fürs Portal nicht freigegeben.",
-        "pruefen": "Objekt › Kundenportal ansehen\nZugang des Auftraggebers prüfen",
-        "loesung": "Objekt › Kundenportal öffnen\n„Wachbuch für Auftraggeber freigeben“ aktivieren\nAuftraggeber neu anmelden lassen",
-        "hinweis": "Interne Einträge bleiben immer unsichtbar."
+        "loesung": "Objekt › Kundenportal: „Wachbuch für Auftraggeber freigeben“\nZugang des Auftraggebers prüfen\nNeu anmelden lassen",
+        "rueckfragen": "Mit welchem Zugang meldet sich der Auftraggeber an?",
+        "textbaustein": "Das Wachbuch ist für das Kundenportal noch nicht freigegeben. Bitte unter Objekt › Kundenportal „Wachbuch für Auftraggeber freigeben“ aktivieren. Danach sollte sich der Auftraggeber neu anmelden.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Die Freigabe erfolgt pro Objekt. Interne Einträge bleiben immer unsichtbar."
       },
       "erstellt": "2026-05-06T08:00:00Z"
     },
@@ -1720,7 +1785,7 @@
       "id": "SUP-065",
       "name": "Passwort vergessen oder Konto gesperrt",
       "kategorie": "Anmeldung, Benutzerrechte, Datensicherung und Schnittstellen",
-      "bezeichnung": "Nach fünf Fehlversuchen wird das Konto 15 Minuten gesperrt. Ein Link zum Zurücksetzen geht an die hinterlegte E-Mail.",
+      "bezeichnung": "E-423. Konto nach 5 Fehlversuchen 15 Min. gesperrt oder Passwort vergessen.",
       "zusatz": {
         "produkt": "alle",
         "wann": "Beim Anmelden",
@@ -1732,10 +1797,11 @@
         "stufe4": "Meldung E-423 oder Passwort unbekannt",
         "frage": "Wie setze ich mein Passwort zurück?",
         "stichworte": "passwort vergessen gesperrt anmelden login",
-        "ursache": "Zu viele Fehlversuche oder Passwort vergessen.",
-        "pruefen": "Meldung vorlesen lassen\nHinterlegte E-Mail-Adresse prüfen",
-        "loesung": "Auf der Anmeldeseite „Passwort vergessen“ wählen\nLink in der E-Mail innerhalb von 30 Minuten öffnen\nBei Sperre 15 Minuten warten oder Admin entsperren lassen",
-        "hinweis": "Passwörter nie am Telefon erfragen oder vergeben."
+        "loesung": "Anmeldeseite › „Passwort vergessen“\nLink 30 Min. gültig\nSperre: 15 Min. warten oder Admin entsperrt\nPasswort nie vergeben oder erfragen",
+        "rueckfragen": "Welche E-Mail-Adresse ist für das Konto hinterlegt?",
+        "textbaustein": "Nach fünf Fehlversuchen wird das Konto für 15 Minuten gesperrt. Bitte auf der Anmeldeseite „Passwort vergessen“ wählen und den Link aus der E-Mail innerhalb von 30 Minuten öffnen. Alternativ kann Ihr Administrator das Konto entsperren.",
+        "eskalation": "Keine Eskalation. Wir vergeben keine Passwörter.",
+        "begruendung": "Die Sperre schützt vor Durchprobieren von Passwörtern. Der Zurücksetzen-Link geht nur an die hinterlegte Adresse."
       },
       "erstellt": "2026-05-07T07:00:00Z"
     },
@@ -1743,7 +1809,7 @@
       "id": "SUP-066",
       "name": "Mitarbeitende sehen keine Preise",
       "kategorie": "Anmeldung, Benutzerrechte, Datensicherung und Schnittstellen",
-      "bezeichnung": "In der Benutzerrolle ist das Recht „Preise und Rechnungen sehen“ nicht gesetzt.",
+      "bezeichnung": "Recht „Preise und Rechnungen sehen“ fehlt in der Rolle.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Öffnen",
@@ -1754,10 +1820,11 @@
         "stufe4": "Rolle ohne Recht „Preise und Rechnungen sehen“",
         "frage": "Warum sieht ein Mitarbeiter keine Preise?",
         "stichworte": "rechte rolle benutzer preise sehen berechtigung",
-        "ursache": "Rechte in der Rolle fehlen.",
-        "pruefen": "Rolle der Person prüfen\nRecht in der Rolle prüfen",
-        "loesung": "Verwaltung › Benutzer › Rollen öffnen\nRecht „Preise und Rechnungen sehen“ setzen\nPerson meldet sich neu an",
-        "hinweis": "Rechte nur auf Wunsch eines Admins ändern."
+        "loesung": "Nur auf Admin-Wunsch\nVerwaltung › Benutzer › Rollen: Recht setzen\nPerson neu anmelden",
+        "rueckfragen": "Wünscht Ihr Administrator die Änderung?",
+        "textbaustein": "In der Benutzerrolle fehlt das Recht „Preise und Rechnungen sehen“. Ihr Administrator kann es unter Verwaltung › Benutzer › Rollen setzen. Danach muss sich die Person neu anmelden.",
+        "eskalation": "Keine Eskalation. Rechte nur auf Wunsch eines Admins des Betriebs ändern.",
+        "begruendung": "Preise sind bewusst ein eigenes Recht, damit z. B. Monteure Aufträge ohne Preise sehen."
       },
       "erstellt": "2026-05-03T06:00:00Z"
     },
@@ -1765,7 +1832,7 @@
       "id": "SUP-067",
       "name": "Datensicherung schlägt fehl",
       "kategorie": "Anmeldung, Benutzerrechte, Datensicherung und Schnittstellen",
-      "bezeichnung": "Die Sicherung zielt auf ein Netzlaufwerk, das beim Start der Sicherung nicht verbunden ist.",
+      "bezeichnung": "B-17. Sicherungsziel (Netzlaufwerk) beim Start nicht verbunden.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Bei der Datensicherung",
@@ -1777,10 +1844,11 @@
         "stufe4": "Protokoll meldet B-17 (Ziel nicht erreichbar)",
         "frage": "Warum läuft die Datensicherung nicht?",
         "stichworte": "datensicherung backup fehlgeschlagen netzlaufwerk",
-        "ursache": "Netzlaufwerk nicht verbunden.",
-        "pruefen": "Protokoll öffnen\nZiel-Pfad prüfen\nDatum der letzten erfolgreichen Sicherung notieren",
-        "loesung": "Einstellungen › Datensicherung öffnen\nZiel als vollständigen Pfad (\\\\server\\backup) statt Laufwerksbuchstabe eintragen\n„Jetzt sichern“ wählen und Protokoll prüfen",
-        "hinweis": "Länger als 7 Tage keine Sicherung: Kunde ausdrücklich darauf hinweisen."
+        "loesung": "Protokoll: letzte erfolgreiche Sicherung\nEinstellungen › Datensicherung: UNC-Pfad (\\\\server\\backup) statt Laufwerksbuchstabe\n„Jetzt sichern“, Protokoll prüfen",
+        "rueckfragen": "Wann lief die letzte erfolgreiche Sicherung?",
+        "textbaustein": "Die Sicherung schlägt fehl, weil das Netzlaufwerk beim Start nicht verbunden ist. Tragen Sie bitte unter Einstellungen › Datensicherung den vollständigen Pfad (z. B. \\\\server\\backup) statt eines Laufwerksbuchstabens ein und starten Sie „Jetzt sichern“.",
+        "eskalation": "2nd Level, wenn auch mit UNC-Pfad keine Sicherung läuft. Kunde bei > 7 Tagen ohne Sicherung ausdrücklich warnen.",
+        "begruendung": "Laufwerksbuchstaben werden pro Benutzeranmeldung verbunden. Der Sicherungsdienst läuft ohne Anmeldung und sieht sie nicht."
       },
       "erstellt": "2026-04-29T05:00:00Z"
     },
@@ -1788,7 +1856,7 @@
       "id": "SUP-068",
       "name": "DATEV-Export wird vom Steuerbüro abgelehnt",
       "kategorie": "Anmeldung, Benutzerrechte, Datensicherung und Schnittstellen",
-      "bezeichnung": "Beraternummer, Mandantennummer oder die Länge der Sachkonten passen nicht zu den Angaben des Steuerbüros.",
+      "bezeichnung": "D-02. Berater-/Mandantennummer oder Sachkontenlänge passt nicht zum Steuerbüro.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Exportieren",
@@ -1800,10 +1868,11 @@
         "stufe4": "Steuerbüro meldet falsche Berater- oder Kontonummer",
         "frage": "Warum kann das Steuerbüro den DATEV-Export nicht einlesen?",
         "stichworte": "datev export steuerbüro buchhaltung sachkonto",
-        "ursache": "Stammdaten passen nicht zum Steuerbüro.",
-        "pruefen": "Fehlertext des Steuerbüros erfragen\nEinstellungen › DATEV prüfen",
-        "loesung": "Einstellungen › DATEV öffnen\nBerater- und Mandantennummer mit dem Steuerbüro abgleichen\nSachkontenlänge (meist 4) prüfen\nExport für den Zeitraum neu erstellen",
-        "hinweis": "Erneuter Export erzeugt neue Buchungsstapel. Alten Stapel im Steuerbüro löschen lassen."
+        "loesung": "Einstellungen › DATEV: Berater- + MandantenNr mit Steuerbüro abgleichen\nSachkontenlänge (meist 4)\nExport neu erstellen\nAlten Stapel im Steuerbüro löschen lassen",
+        "rueckfragen": "Welche Fehlermeldung hat das Steuerbüro genannt?\nWelche Berater- und Mandantennummer nennt das Steuerbüro?",
+        "textbaustein": "Der Export passt nicht zu den Angaben Ihres Steuerbüros. Gleichen Sie bitte unter Einstellungen › DATEV Berater- und Mandantennummer sowie die Sachkontenlänge mit dem Steuerbüro ab und erstellen Sie den Export neu. Den alten Buchungsstapel sollte das Steuerbüro löschen.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "DATEV prüft die Stammdaten des Stapels gegen den Mandanten. Ein erneuter Export erzeugt einen neuen Stapel, der alte bleibt sonst doppelt."
       },
       "erstellt": "2026-04-25T04:00:00Z"
     },
@@ -1811,7 +1880,7 @@
       "id": "SUP-069",
       "name": "Update bricht ab: Datenbank wird verwendet",
       "kategorie": "Anmeldung, Benutzerrechte, Datensicherung und Schnittstellen",
-      "bezeichnung": "An einem anderen Arbeitsplatz ist Fakturo noch geöffnet, deshalb kann das Update die Datenbank nicht umstellen.",
+      "bezeichnung": "U-05. Datenbank in Verwendung, Fakturo an einem Arbeitsplatz noch offen.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Update",
@@ -1823,10 +1892,11 @@
         "stufe4": "Meldung U-05 (Datenbank in Verwendung)",
         "frage": "Warum bricht das Fakturo-Update ab?",
         "stichworte": "update installation abbruch datenbank verwendet",
-        "ursache": "Fakturo ist noch an einem Arbeitsplatz offen.",
-        "pruefen": "Angemeldete Benutzer prüfen\nGeplante Aufgaben (z. B. Datensicherung) prüfen",
-        "loesung": "Fakturo an allen Arbeitsplätzen schließen\nUnter Verwaltung › Angemeldete Benutzer prüfen, dass niemand mehr angemeldet ist\nUpdate erneut als Administrator starten",
-        "hinweis": "Vor dem Update eine Datensicherung machen."
+        "loesung": "Fakturo überall schließen\nVerwaltung › Angemeldete Benutzer: niemand mehr\nGeplante Aufgaben (Sicherung) prüfen\nVorher Datensicherung\nUpdate als Administrator starten",
+        "rueckfragen": "Ist Fakturo an einem anderen Arbeitsplatz oder per Remote noch geöffnet?",
+        "textbaustein": "Das Update kann die Datenbank nicht umstellen, solange Fakturo noch an einem Arbeitsplatz geöffnet ist. Bitte schließen Sie Fakturo an allen Arbeitsplätzen, machen Sie eine Datensicherung und starten Sie das Update erneut als Administrator.",
+        "eskalation": "2nd Level, wenn niemand angemeldet ist und U-05 bleibt.",
+        "begruendung": "Für die Umstellung braucht das Update exklusiven Zugriff auf die Datenbank. Auch eine laufende Sicherung blockiert."
       },
       "erstellt": "2026-04-21T03:00:00Z"
     },
@@ -1834,7 +1904,7 @@
       "id": "SUP-070",
       "name": "Zwei-Faktor-Code fehlt nach Handywechsel",
       "kategorie": "Anmeldung, Benutzerrechte, Datensicherung und Schnittstellen",
-      "bezeichnung": "Nach einem Handywechsel kommt kein Code, weil die Authenticator-App auf dem alten Gerät war.",
+      "bezeichnung": "Authenticator war auf dem alten Handy, 2FA muss zurückgesetzt werden.",
       "zusatz": {
         "produkt": "alle",
         "wann": "Beim Anmelden",
@@ -1846,10 +1916,11 @@
         "stufe4": "Neues Handy, Authenticator nicht übertragen",
         "frage": "Was tun nach einem Handywechsel ohne Zwei-Faktor-Code?",
         "stichworte": "zwei faktor 2fa handy neu code authenticator",
-        "ursache": "Der Authenticator war auf dem alten Handy.",
-        "pruefen": "Fragen, ob das alte Handy noch da ist\nIdentität über den Admin des Betriebs bestätigen",
-        "loesung": "Admin des Betriebs setzt Zwei-Faktor unter Verwaltung › Benutzer zurück\nPerson meldet sich an und richtet die App neu ein",
-        "hinweis": "Zwei-Faktor nur auf Anfrage eines Admins des Betriebs zurücksetzen."
+        "loesung": "Nur auf Anfrage eines Admins des Betriebs\nAdmin: Verwaltung › Benutzer › Zwei-Faktor zurücksetzen\nPerson richtet App neu ein",
+        "rueckfragen": "Ist das alte Handy noch verfügbar?\nBestätigt Ihr Administrator die Anfrage?",
+        "textbaustein": "Der Zwei-Faktor-Code war an Ihr altes Handy gebunden. Ihr Administrator kann die Zwei-Faktor-Anmeldung unter Verwaltung › Benutzer zurücksetzen. Danach melden Sie sich an und richten die Authenticator-App auf dem neuen Handy ein.",
+        "eskalation": "Keine Eskalation. Kein Zurücksetzen durch den Support ohne Admin des Betriebs.",
+        "begruendung": "Der Support kann die Identität am Telefon nicht sicher prüfen, deshalb läuft das Zurücksetzen über den Admin des Betriebs."
       },
       "erstellt": "2026-04-22T09:00:00Z"
     },
@@ -1857,7 +1928,7 @@
       "id": "SUP-071",
       "name": "Lohnexport ist unvollständig",
       "kategorie": "Anmeldung, Benutzerrechte, Datensicherung und Schnittstellen",
-      "bezeichnung": "Im Lohnexport fehlen Stunden einzelner Zeitarten.",
+      "bezeichnung": "Zeitarten ohne Lohnart werden nicht exportiert.",
       "zusatz": {
         "produkt": "Fakturo",
         "wann": "Beim Exportieren",
@@ -1868,10 +1939,11 @@
         "stufe4": "Personen ohne Lohnartenzuordnung",
         "frage": "Warum fehlen Stunden im Lohnexport?",
         "stichworte": "lohnexport lohn fehlt lohnart",
-        "ursache": "Zeitarten ohne zugeordnete Lohnart werden nicht exportiert.",
-        "pruefen": "Exportprotokoll öffnen\nEinstellungen › Lohnarten ansehen",
-        "loesung": "Einstellungen › Lohnarten öffnen\nJeder Zeitart eine Lohnart zuordnen\nExport erneut erstellen",
-        "hinweis": "Lohnarten stimmt der Kunde mit dem Lohnbüro ab."
+        "loesung": "Exportprotokoll prüfen\nEinstellungen › Lohnarten: jeder Zeitart eine Lohnart zuordnen\nExport neu erstellen",
+        "rueckfragen": "Welche Stunden fehlen im Export (z. B. Zuschläge, Bereitschaft)?",
+        "textbaustein": "Im Lohnexport fehlen Stunden, weil einzelnen Zeitarten keine Lohnart zugeordnet ist. Ordnen Sie bitte unter Einstellungen › Lohnarten jeder Zeitart eine Lohnart zu und erstellen Sie den Export neu. Die Lohnarten stimmen Sie bitte mit Ihrem Lohnbüro ab.",
+        "eskalation": "Keine Eskalation.",
+        "begruendung": "Der Export überträgt nur Zeitarten mit Lohnart, damit das Lohnprogramm keine unbekannten Schlüssel erhält."
       },
       "erstellt": "2026-04-18T08:00:00Z"
     }
