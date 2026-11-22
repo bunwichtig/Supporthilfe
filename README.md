@@ -12,7 +12,9 @@ Ein Werkzeug, das Supportern hilft, Probleme einer Software schnell zu lösen. G
 
 ## Mockup ansehen
 
-`mockup/problemsuche.html` im Browser öffnen. Es braucht keinen Server.
+Online: https://bunwichtig.github.io/Supporthilfe/
+
+Oder `mockup/problemsuche.html` lokal im Browser öffnen. Es braucht keinen Server.
 
 ## So funktioniert die Problemsuche
 
