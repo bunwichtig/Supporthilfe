@@ -1,0 +1,11 @@
+﻿id;name;kurzname;programm;frage1;frage2;frage3;frage4;anzahl_eintraege
+K01;Kunden und Kundenstammdaten anlegen, ändern und finden;Kunden;Fakturo;Was möchte der Kunde mit den Kundendaten tun?;Was passiert dabei?;Wo fällt es auf?;Was zeigt Fakturo an?;7
+K02;Aufträge anlegen, bearbeiten und abschließen;Aufträge;Fakturo;Bei welchem Schritt im Auftrag hängt es?;Was passiert genau?;In welchem Status ist der Auftrag?;Was zeigt die Prüfung?;7
+K03;Auftragsdetails: Material und Leistungen erfassen und berechnen;Material & Leistung;Fakturo;Geht es um Material oder um Leistungen?;Was stimmt nicht?;Wo fällt es auf?;Was zeigt die Prüfung?;7
+K04;Rechnungen, Gutschriften, Mahnungen und E-Rechnung;Rechnungen;Fakturo;Um welchen Beleg geht es?;Was ist das Problem?;In welchem Status ist der Beleg?;Was zeigt Fakturo an?;7
+K05;Personal, Arbeitszeiten, Urlaub und Zeitkonten;Personal & Zeiten;Fakturo;Worum geht es bei den Zeiten?;Was stimmt nicht?;Wen betrifft es?;Was zeigt die Prüfung?;6
+K06;Zeiterfassungsterminals, Chips und Ausweise;Terminals;Fakturo;Was ist am Terminal das Problem?;Was beobachtet der Kunde?;Wie viele Terminals oder Personen betrifft es?;Was zeigt das Terminal oder Fakturo?;8
+K07;Online-Zeiterfassung im Browser und in der App;Online-Zeiterfassung;Fakturo Zeit;Wobei hat die Person ein Problem?;Was passiert genau?;Wo tritt es auf?;Was zeigt die Prüfung?;7
+K08;Wächterkontrolle: Rundgänge, Kontrollpunkte und Alarme;Rundgänge;Fakturo Rundgang;Worum geht es beim Rundgang?;Was passiert genau?;Wer bemerkt es?;Was zeigt die Prüfung?;8
+K09;Digitales Wachbuch: Einträge, Schichtübergabe und Berichte;Wachbuch;Fakturo Wachbuch;Worum geht es im Wachbuch?;Was passiert genau?;Wo tritt es auf?;Was zeigt die Prüfung?;7
+K10;Anmeldung, Benutzerrechte, Datensicherung und Schnittstellen;Zugang & Daten;alle;Worum geht es?;Was passiert genau?;Welches Programm ist betroffen?;Was zeigt die Meldung oder das Protokoll?;7

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Support-Eintrag",
+  "description": "Beschreibt ein Problem einer Software für den Support.",
+  "type": "object",
+  "required": ["id", "name", "kategorie", "bezeichnung"],
+  "properties": {
+    "id": { "type": "string", "description": "Automatisch vergebene eindeutige ID" },
+    "name": { "type": "string", "minLength": 1, "description": "Kurzer Name des Problems" },
+    "kategorie": { "type": "string", "minLength": 1, "description": "z.B. Login, Drucken, Installation" },
+    "bezeichnung": { "type": "string", "minLength": 1, "description": "Beschreibung des Problems bzw. der Lösung" },
+    "zusatz": {
+      "type": "object",
+      "description": "Frei definierbare Felder für alles, was noch nicht feststeht (Schlüssel: Wert)",
+      "additionalProperties": { "type": "string" }
+    },
+    "erstellt": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": false
+}
